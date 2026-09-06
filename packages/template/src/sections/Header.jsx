@@ -4,12 +4,13 @@ import { Masthead } from '../components/Masthead.jsx'
 import { hasGallery } from './Gallery.jsx'
 import { linksFor, usePage } from '../page.jsx'
 
+/* Page order, page words. The request button beside the nav covers booking,
+   so it is not repeated as a text link. */
 const NAV = [
   { label: 'Gallery', key: 'gallery' },
-  { label: 'Services', key: 'services' },
+  { label: 'Menu', key: 'services' },
   { label: 'Reviews', key: 'reviews' },
-  { label: 'Book', key: 'book' },
-  { label: 'Visit Us', key: 'visit' },
+  { label: 'Visit', key: 'visit' },
 ]
 
 /** Links only to sections that will actually render for this salon, resolved for the current page. */

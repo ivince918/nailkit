@@ -69,7 +69,7 @@ export function Footer({ config }) {
           <div>
             <h3 className="text-[12px] font-semibold uppercase tracking-[0.16em]" style={{ color: 'var(--muted)' }}>Explore</h3>
             <nav className="mt-4 space-y-2.5 text-[14.5px]">
-              {navFor(config, page).filter((n) => n.key !== 'book').map(({ label: l, href: h }) => (
+              {navFor(config, page).map(({ label: l, href: h }) => (
                 <a key={h} href={h} className="block hover:underline" style={{ color: 'var(--muted)' }}>{l}</a>
               ))}
             </nav>
