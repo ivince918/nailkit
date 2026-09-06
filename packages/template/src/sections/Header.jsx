@@ -5,8 +5,8 @@ import { hasGallery } from './Gallery.jsx'
 import { linksFor, usePage } from '../page.jsx'
 
 const NAV = [
-  { label: 'Services', key: 'services' },
   { label: 'Gallery', key: 'gallery' },
+  { label: 'Services', key: 'services' },
   { label: 'Reviews', key: 'reviews' },
   { label: 'Book', key: 'book' },
   { label: 'Visit Us', key: 'visit' },

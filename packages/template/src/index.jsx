@@ -72,8 +72,8 @@ export default function SalonSite({ config, page = 'home' }) {
             <Hero config={config} />
             <Story config={config} />
             <WhyUs config={config} />
-            <Services config={config} />
             <Gallery config={config} full={!pages.gallery} />
+            <Services config={config} />
             <Reviews config={config} />
             {!pages.book && <Booking config={config} />}
             <Visit config={config} />
