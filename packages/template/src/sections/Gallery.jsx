@@ -33,11 +33,7 @@ export function Gallery({ config, full = false }) {
 
   return (
     <Section id="gallery" band>
-      <SectionHead
-        as={page === 'gallery' ? 'h1' : 'h2'}
-        title="Recent work"
-        blurb={full ? `${photos.length} sets done at ${name}.` : `Sets done at ${name}.`}
-      />
+      <SectionHead as={page === 'gallery' ? 'h1' : 'h2'} title="Recent work" />
 
       <div className="masonry mt-12">
         {shown.map((p, i) => (
