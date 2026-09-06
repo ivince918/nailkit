@@ -1,0 +1,348 @@
+{
+  "slug": "marigold-nail-studio-palo-alto",
+  "placeId": "maps-marigold-nail-studio-1840-vireo-lane-palo-alto-ca-94306",
+  "generatedAt": "2026-08-24T08:48:36.265Z",
+  "name": "Marigold Nail Studio",
+  "theme": "blush-modern",
+  "phone": "+16505550142",
+  "phoneDisplay": "(650) 555-0142",
+  "address": {
+    "line1": "1840 Vireo Lane",
+    "city": "Palo Alto",
+    "state": "CA",
+    "zip": "94306",
+    "full": "1840 Vireo Lane, Palo Alto, CA 94306"
+  },
+  "geo": {
+    "lat": 37.4241,
+    "lng": -122.1385
+  },
+  "mapsUrl": "https://www.google.com/maps/search/Marigold%20Nail%20Studio%201840%20Vireo%20Lane%2C%20Palo%20Alto%2C%20CA%2094306",
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination_place_id=maps-marigold-nail-studio-1840-vireo-lane-palo-alto-ca-94306&destination=1840%20Vireo%20Lane%2C%20Palo%20Alto%2C%20CA%2094306",
+  "websiteUrl": null,
+  "bookingUrl": "https://example.com/book",
+  "utcOffsetMinutes": -420,
+  "hours": [
+    {
+      "day": 0,
+      "open": "10:00",
+      "close": "18:00"
+    },
+    {
+      "day": 1,
+      "closed": true
+    },
+    {
+      "day": 2,
+      "open": "09:30",
+      "close": "19:00"
+    },
+    {
+      "day": 3,
+      "open": "09:30",
+      "close": "19:00"
+    },
+    {
+      "day": 4,
+      "open": "09:30",
+      "close": "19:00"
+    },
+    {
+      "day": 5,
+      "open": "09:30",
+      "close": "19:00"
+    },
+    {
+      "day": 6,
+      "open": "09:30",
+      "close": "19:00"
+    }
+  ],
+  "rating": 4.9,
+  "reviewCount": 486,
+  "showRating": true,
+  "mapEmbed": null,
+  "priceRange": "$$",
+  "hero": {
+    "headline": "The best-reviewed nails in Palo Alto",
+    "sub": "From a clean classic set to full custom art, Marigold Nail Studio takes the time to get it right."
+  },
+  "story": {
+    "title": "Welcome to Marigold Nail Studio",
+    "body": [
+      "Marigold Nail Studio is a full-service nail studio in Palo Alto, where a licensed team handles everything from a clean classic manicure to sculpted extensions and custom art.",
+      "Every service starts with properly sterilized tools and a fresh file. We take the time to prep the nail correctly, because that is the difference between a set that lasts a weekend and one that lasts for weeks.",
+      "We are open 6 days a week, and walk-ins are always welcome — though a quick call to (650) 555-0142 guarantees your spot."
+    ]
+  },
+  "trust": [
+    {
+      "value": "6 days",
+      "label": "Open each week"
+    },
+    {
+      "value": "Walk-ins",
+      "label": "Welcome any time"
+    },
+    {
+      "value": "Licensed",
+      "label": "Professional technicians"
+    }
+  ],
+  "why": [
+    {
+      "icon": "smile",
+      "title": "Genuinely warm service",
+      "body": "You get greeted by name, not processed through a queue. Our regulars stay regulars for a reason."
+    },
+    {
+      "icon": "clock",
+      "title": "Work that actually lasts",
+      "body": "Proper prep and quality product mean gel and dip that hold up for weeks, not days."
+    },
+    {
+      "icon": "flower",
+      "title": "A real spa experience",
+      "body": "Massage chairs, a calm room, and time that never feels rushed — treatment, not transaction."
+    },
+    {
+      "icon": "palette",
+      "title": "Custom nail art on request",
+      "body": "Bring a screenshot or an idea. Our techs design freehand and match what you had in mind."
+    },
+    {
+      "icon": "shield",
+      "title": "Spotless and sanitized",
+      "body": "Fresh files, liners, and fully sterilized tools for every single guest — no exceptions."
+    },
+    {
+      "icon": "verified",
+      "title": "Meticulous attention",
+      "body": "Even cuticles, clean lines, and shaping that gets checked twice before you leave the chair."
+    }
+  ],
+  "services": [
+    {
+      "name": "Manicures",
+      "icon": "hand",
+      "items": [
+        "Classic Manicure",
+        "Gel Manicure",
+        "Spa Manicure",
+        "French Manicure",
+        "Polish Change",
+        "Nail Trim & Shape"
+      ]
+    },
+    {
+      "name": "Pedicures",
+      "icon": "footprints",
+      "items": [
+        "Classic Pedicure",
+        "Spa Pedicure",
+        "Deluxe Pedicure",
+        "Gel Pedicure",
+        "Hot Stone Pedicure",
+        "Callus Treatment"
+      ]
+    },
+    {
+      "name": "Extensions",
+      "icon": "gem",
+      "items": [
+        "Acrylic Full Set",
+        "Acrylic Fill",
+        "Dip Powder (SNS)",
+        "Gel-X Extensions",
+        "Builder Gel",
+        "Ombré & French Fade"
+      ]
+    },
+    {
+      "name": "Nail Art",
+      "icon": "palette",
+      "items": [
+        "Custom Hand-Painted Art",
+        "Chrome & Cat Eye",
+        "Rhinestones & Charms",
+        "3D Art",
+        "Marble & Swirl",
+        "Seasonal Designs"
+      ]
+    },
+    {
+      "name": "Add-Ons",
+      "icon": "sparkles",
+      "items": [
+        "Paraffin Wax",
+        "Hot Stone Massage",
+        "Extended Massage",
+        "Nail Repair",
+        "Gel Removal",
+        "Cuticle Treatment"
+      ]
+    },
+    {
+      "name": "Waxing",
+      "icon": "leaf",
+      "items": [
+        "Eyebrow Wax",
+        "Lip & Chin",
+        "Full Face",
+        "Underarm",
+        "Half Leg",
+        "Full Leg"
+      ]
+    },
+    {
+      "name": "Lashes & Brows",
+      "icon": "eye",
+      "items": [
+        "Lash Extensions",
+        "Lash Lift",
+        "Lash Tint",
+        "Brow Lamination",
+        "Brow Tint",
+        "Microblading"
+      ]
+    },
+    {
+      "name": "Kids' Spa",
+      "icon": "baby",
+      "items": [
+        "Princess Manicure",
+        "Princess Pedicure",
+        "Mini Mani + Pedi",
+        "Polish Change",
+        "Nail Art for Kids"
+      ]
+    },
+    {
+      "name": "Massage",
+      "icon": "heart",
+      "items": [
+        "Neck & Shoulder",
+        "Hand & Arm",
+        "Foot Reflexology",
+        "Hot Stone",
+        "Extended Leg Massage"
+      ]
+    }
+  ],
+  "showPrices": false,
+  "amenities": [
+    "Free parking",
+    "Wheelchair accessible",
+    "Cards accepted",
+    "Walk-ins welcome"
+  ],
+  "social": {
+    "instagram": null,
+    "facebook": null
+  },
+  "photos": [
+    {
+      "alt": "Marigold Nail Studio — photo 1",
+      "attribution": null,
+      "src": "/photos/01.webp",
+      "srcSm": "/photos/01@sm.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "alt": "Marigold Nail Studio — photo 2",
+      "attribution": null,
+      "src": "/photos/02.webp",
+      "srcSm": "/photos/02@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Marigold Nail Studio — photo 3",
+      "attribution": null,
+      "src": "/photos/03.webp",
+      "srcSm": "/photos/03@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Marigold Nail Studio — photo 4",
+      "attribution": null,
+      "src": "/photos/04.webp",
+      "srcSm": "/photos/04@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Marigold Nail Studio — photo 5",
+      "attribution": null,
+      "src": "/photos/05.webp",
+      "srcSm": "/photos/05@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Marigold Nail Studio — photo 6",
+      "attribution": null,
+      "src": "/photos/06.webp",
+      "srcSm": "/photos/06@sm.webp",
+      "width": 1600,
+      "height": 1200
+    }
+  ],
+  "photoSource": "preview",
+  "reviews": [
+    {
+      "author": "Dana W.",
+      "avatar": null,
+      "rating": 5,
+      "text": "My gel set lasted three full weeks with no chips or lifting. They spend real time on the prep instead of rushing straight to color, and you can tell the difference by week two.",
+      "time": "2 weeks ago",
+      "url": null
+    },
+    {
+      "author": "Priya S.",
+      "avatar": null,
+      "rating": 5,
+      "text": "Brought in a screenshot of a chrome French design I was sure was too fussy to copy. They matched it freehand, quoted the price up front, and there were no surprise add-ons at checkout.",
+      "time": "1 month ago",
+      "url": null
+    },
+    {
+      "author": "Marisol T.",
+      "avatar": null,
+      "rating": 5,
+      "text": "Walked in on a Saturday afternoon and got a straight answer about the wait instead of being parked for an hour. Spotless space, fresh file out of the packet, genuinely warm staff.",
+      "time": "3 weeks ago",
+      "url": null
+    },
+    {
+      "author": "Renee K.",
+      "avatar": null,
+      "rating": 5,
+      "text": "The pedicure is the most relaxing hour of my month. Massage chairs, quiet room, and nobody makes you feel rushed out of the seat when they are busy.",
+      "time": "2 months ago",
+      "url": null
+    },
+    {
+      "author": "Alicia B.",
+      "avatar": null,
+      "rating": 5,
+      "text": "I am picky about shaping and they got my almond set even on the first try. She checked both hands against each other twice before sending me to dry.",
+      "time": "5 weeks ago",
+      "url": null
+    },
+    {
+      "author": "Joy N.",
+      "avatar": null,
+      "rating": 5,
+      "text": "Took my daughter for her birthday and they treated her like a regular client. Sweet, patient, and the whole thing was priced fairly for what we got.",
+      "time": "1 week ago",
+      "url": null
+    }
+  ],
+  "seo": {
+    "title": "Marigold Nail Studio | Nail Salon in Palo Alto, CA",
+    "description": "Marigold Nail Studio is a nail salon in Palo Alto, CA. Manicures, pedicures, gel, dip powder and custom nail art. Call (650) 555-0142."
+  }
+}

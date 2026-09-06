@@ -1,0 +1,278 @@
+{
+  "slug": "sparkle-nails-fremont",
+  "placeId": "g/1tmxr7v0",
+  "generatedAt": "2026-08-24T08:48:40.731Z",
+  "name": "Sparkle Nails",
+  "theme": "sage-minimal",
+  "phone": "+15104948288",
+  "phoneDisplay": "(510) 494-8288",
+  "address": {
+    "line1": "34143 Fremont Blvd",
+    "city": "Fremont",
+    "state": "CA",
+    "zip": "94555",
+    "full": "34143 Fremont Blvd, Fremont, CA 94555"
+  },
+  "geo": {
+    "lat": 37.5752936,
+    "lng": -122.044191
+  },
+  "mapsUrl": "https://www.google.com/maps/place/Sparkle+Nails/@37.5752978,-122.0490619,17z",
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination_place_id=g/1tmxr7v0&destination=34143%20Fremont%20Blvd%2C%20Fremont%2C%20CA%2094555",
+  "websiteUrl": null,
+  "bookingUrl": null,
+  "utcOffsetMinutes": -420,
+  "hours": [
+    {
+      "day": 0,
+      "open": "10:00",
+      "close": "17:00"
+    },
+    {
+      "day": 1,
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "day": 2,
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "day": 3,
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "day": 4,
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "day": 5,
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "day": 6,
+      "open": "09:30",
+      "close": "18:30"
+    }
+  ],
+  "rating": 4.2,
+  "reviewCount": 55,
+  "showRating": false,
+  "mapEmbed": null,
+  "priceRange": "$$",
+  "hero": {
+    "headline": "Fremont's home for flawless nails",
+    "sub": "A licensed team, spotless tools, and finishes that hold up. Serving Fremont seven days a week."
+  },
+  "story": {
+    "title": "Welcome to Sparkle Nails",
+    "body": [
+      "Sparkle Nails is a full-service nail studio in Fremont, where a licensed team handles everything from a clean classic manicure to sculpted extensions and custom art.",
+      "Every service starts with properly sterilized tools and a fresh file. We take the time to prep the nail correctly, because that is the difference between a set that lasts a weekend and one that lasts for weeks.",
+      "We are open seven days a week, and walk-ins are always welcome — though a quick call to (510) 494-8288 guarantees your spot."
+    ]
+  },
+  "trust": [
+    {
+      "value": "7 days",
+      "label": "Open every day of the week"
+    },
+    {
+      "value": "Walk-ins",
+      "label": "Welcome any time"
+    },
+    {
+      "value": "Licensed",
+      "label": "Professional technicians"
+    }
+  ],
+  "why": [
+    {
+      "icon": "flower",
+      "title": "A real spa experience",
+      "body": "Massage chairs, a calm room, and time that never feels rushed — treatment, not transaction."
+    },
+    {
+      "icon": "smile",
+      "title": "Genuinely warm service",
+      "body": "You get greeted by name, not processed through a queue. Our regulars stay regulars for a reason."
+    },
+    {
+      "icon": "palette",
+      "title": "Custom nail art on request",
+      "body": "Bring a screenshot or an idea. Our techs design freehand and match what you had in mind."
+    },
+    {
+      "icon": "award",
+      "title": "Honest, fair pricing",
+      "body": "Clear pricing quoted up front. No surprise add-ons appearing on the bill at checkout."
+    },
+    {
+      "icon": "star",
+      "title": "Experienced technicians",
+      "body": "A licensed team that has been shaping, sculpting, and painting nails for years."
+    },
+    {
+      "icon": "shield",
+      "title": "Spotless and sanitized",
+      "body": "Fresh files, liners, and fully sterilized tools for every single guest — no exceptions."
+    }
+  ],
+  "services": [
+    {
+      "name": "Manicures",
+      "icon": "hand",
+      "items": [
+        "Classic Manicure",
+        "Gel Manicure",
+        "Spa Manicure",
+        "French Manicure",
+        "Polish Change",
+        "Nail Trim & Shape"
+      ]
+    },
+    {
+      "name": "Pedicures",
+      "icon": "footprints",
+      "items": [
+        "Classic Pedicure",
+        "Spa Pedicure",
+        "Deluxe Pedicure",
+        "Gel Pedicure",
+        "Hot Stone Pedicure",
+        "Callus Treatment"
+      ]
+    },
+    {
+      "name": "Extensions",
+      "icon": "gem",
+      "items": [
+        "Acrylic Full Set",
+        "Acrylic Fill",
+        "Dip Powder (SNS)",
+        "Gel-X Extensions",
+        "Builder Gel",
+        "Ombré & French Fade"
+      ]
+    },
+    {
+      "name": "Nail Art",
+      "icon": "palette",
+      "items": [
+        "Custom Hand-Painted Art",
+        "Chrome & Cat Eye",
+        "Rhinestones & Charms",
+        "3D Art",
+        "Marble & Swirl",
+        "Seasonal Designs"
+      ]
+    },
+    {
+      "name": "Add-Ons",
+      "icon": "sparkles",
+      "items": [
+        "Paraffin Wax",
+        "Hot Stone Massage",
+        "Extended Massage",
+        "Nail Repair",
+        "Gel Removal",
+        "Cuticle Treatment"
+      ]
+    }
+  ],
+  "showPrices": false,
+  "amenities": [
+    "Free parking",
+    "Cards accepted",
+    "Walk-ins welcome"
+  ],
+  "social": {
+    "instagram": null,
+    "facebook": null
+  },
+  "photos": [
+    {
+      "alt": "Sparkle Nails — photo 1",
+      "attribution": null,
+      "src": "/photos/01.webp",
+      "srcSm": "/photos/01@sm.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "alt": "Sparkle Nails — photo 2",
+      "attribution": null,
+      "src": "/photos/02.webp",
+      "srcSm": "/photos/02@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Sparkle Nails — photo 3",
+      "attribution": null,
+      "src": "/photos/03.webp",
+      "srcSm": "/photos/03@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Sparkle Nails — photo 4",
+      "attribution": null,
+      "src": "/photos/04.webp",
+      "srcSm": "/photos/04@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Sparkle Nails — photo 5",
+      "attribution": null,
+      "src": "/photos/05.webp",
+      "srcSm": "/photos/05@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Sparkle Nails — photo 6",
+      "attribution": null,
+      "src": "/photos/06.webp",
+      "srcSm": "/photos/06@sm.webp",
+      "width": 1600,
+      "height": 1200
+    }
+  ],
+  "photoSource": "preview",
+  "reviews": [
+    {
+      "author": "Andriana Enix",
+      "avatar": null,
+      "rating": 5,
+      "text": "I trust Jenny with my nails more than anyone. She has done my nails for my engagement, my engagement party, my bachelorette, my wedding and even my graduation. The ladies here are great and are very kind and accommodating. The prices are more than fair for the Bay Area.",
+      "time": "8 months ago",
+      "url": null
+    },
+    {
+      "author": "Deborah Joplin",
+      "avatar": null,
+      "rating": 5,
+      "text": "Cindy provided the best pedicure I have had in years! I will be going back every time. So thankful!",
+      "time": "4 months ago",
+      "url": null
+    },
+    {
+      "author": "Alexandra Alexa",
+      "avatar": null,
+      "rating": 5,
+      "text": "Jenny does my nails each time, and I like it very much. Thank you, Sparkle Nails!",
+      "time": "5 months ago",
+      "url": null
+    }
+  ],
+  "seo": {
+    "title": "Sparkle Nails | Nail Salon in Fremont, CA",
+    "description": "Sparkle Nails is a nail salon in Fremont, CA. Manicures, pedicures, gel, dip powder and custom nail art. Call (510) 494-8288."
+  }
+}

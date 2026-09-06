@@ -1,0 +1,313 @@
+{
+  "slug": "heavenly-nail-spa-palo-alto",
+  "placeId": "maps-heavenly-nail-spa-4222-el-camino-real-palo-alto-ca-94306",
+  "generatedAt": "2026-08-24T08:48:33.890Z",
+  "name": "Heavenly Nail Spa",
+  "theme": "marble-gold",
+  "phone": "+16503846878",
+  "phoneDisplay": "(650) 384-6878",
+  "address": {
+    "line1": "4222 El Camino Real",
+    "city": "Palo Alto",
+    "state": "CA",
+    "zip": "94306",
+    "full": "4222 El Camino Real, Palo Alto, CA 94306"
+  },
+  "geo": {
+    "lat": 37.4128,
+    "lng": -122.1338
+  },
+  "mapsUrl": "https://www.google.com/maps/search/Heavenly+Nail+Spa+4222+El+Camino+Real+Palo+Alto",
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination_place_id=maps-heavenly-nail-spa-4222-el-camino-real-palo-alto-ca-94306&destination=4222%20El%20Camino%20Real%2C%20Palo%20Alto%2C%20CA%2094306",
+  "websiteUrl": "https://heavenlynailandspa.com",
+  "bookingUrl": "https://heavenlynailandspa.com/booking/",
+  "utcOffsetMinutes": -420,
+  "hours": [
+    {
+      "day": 0,
+      "open": "09:00",
+      "close": "18:00"
+    },
+    {
+      "day": 1,
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "day": 2,
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "day": 3,
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "day": 4,
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "day": 5,
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "day": 6,
+      "open": "09:00",
+      "close": "19:00"
+    }
+  ],
+  "rating": 4.8,
+  "reviewCount": 1122,
+  "showRating": true,
+  "mapEmbed": null,
+  "priceRange": "$$",
+  "hero": {
+    "headline": "Palo Alto's highest-rated nail studio",
+    "sub": "From a clean classic set to full custom art, Heavenly Nail Spa takes the time to get it right."
+  },
+  "story": {
+    "title": "Welcome to Heavenly Nail Spa",
+    "body": [
+      "Heavenly Nail Spa is a full-service nail studio in Palo Alto, where a licensed team handles everything from a clean classic manicure to sculpted extensions and custom art.",
+      "Every service starts with properly sterilized tools and a fresh file. We take the time to prep the nail correctly, because that is the difference between a set that lasts a weekend and one that lasts for weeks.",
+      "We are open seven days a week, and walk-ins are always welcome — though a quick call to (650) 384-6878 guarantees your spot."
+    ]
+  },
+  "trust": [
+    {
+      "value": "7 days",
+      "label": "Open every day of the week"
+    },
+    {
+      "value": "Walk-ins",
+      "label": "Welcome any time"
+    },
+    {
+      "value": "Licensed",
+      "label": "Professional technicians"
+    }
+  ],
+  "why": [
+    {
+      "icon": "smile",
+      "title": "Genuinely warm service",
+      "body": "You get greeted by name, not processed through a queue. Our regulars stay regulars for a reason."
+    },
+    {
+      "icon": "flower",
+      "title": "A real spa experience",
+      "body": "Massage chairs, a calm room, and time that never feels rushed — treatment, not transaction."
+    },
+    {
+      "icon": "star",
+      "title": "Experienced technicians",
+      "body": "A licensed team that has been shaping, sculpting, and painting nails for years."
+    },
+    {
+      "icon": "shield",
+      "title": "Spotless and sanitized",
+      "body": "Fresh files, liners, and fully sterilized tools for every single guest — no exceptions."
+    },
+    {
+      "icon": "verified",
+      "title": "Meticulous attention",
+      "body": "Even cuticles, clean lines, and shaping that gets checked twice before you leave the chair."
+    },
+    {
+      "icon": "palette",
+      "title": "Custom nail art on request",
+      "body": "Bring a screenshot or an idea. Our techs design freehand and match what you had in mind."
+    }
+  ],
+  "services": [
+    {
+      "name": "Manicures",
+      "icon": "hand",
+      "items": [
+        "Classic Manicure",
+        "Gel Manicure",
+        "Spa Manicure",
+        "French Manicure",
+        "Polish Change",
+        "Nail Trim & Shape"
+      ]
+    },
+    {
+      "name": "Pedicures",
+      "icon": "footprints",
+      "items": [
+        "Classic Pedicure",
+        "Spa Pedicure",
+        "Deluxe Pedicure",
+        "Gel Pedicure",
+        "Hot Stone Pedicure",
+        "Callus Treatment"
+      ]
+    },
+    {
+      "name": "Extensions",
+      "icon": "gem",
+      "items": [
+        "Acrylic Full Set",
+        "Acrylic Fill",
+        "Dip Powder (SNS)",
+        "Gel-X Extensions",
+        "Builder Gel",
+        "Ombré & French Fade"
+      ]
+    },
+    {
+      "name": "Nail Art",
+      "icon": "palette",
+      "items": [
+        "Custom Hand-Painted Art",
+        "Chrome & Cat Eye",
+        "Rhinestones & Charms",
+        "3D Art",
+        "Marble & Swirl",
+        "Seasonal Designs"
+      ]
+    },
+    {
+      "name": "Add-Ons",
+      "icon": "sparkles",
+      "items": [
+        "Paraffin Wax",
+        "Hot Stone Massage",
+        "Extended Massage",
+        "Nail Repair",
+        "Gel Removal",
+        "Cuticle Treatment"
+      ]
+    },
+    {
+      "name": "Waxing",
+      "icon": "leaf",
+      "items": [
+        "Eyebrow Wax",
+        "Lip & Chin",
+        "Full Face",
+        "Underarm",
+        "Half Leg",
+        "Full Leg"
+      ]
+    }
+  ],
+  "showPrices": false,
+  "amenities": [
+    "Cards accepted",
+    "Walk-ins welcome"
+  ],
+  "social": {
+    "instagram": null,
+    "facebook": null
+  },
+  "photos": [
+    {
+      "alt": "Heavenly Nail Spa — photo 1",
+      "attribution": null,
+      "src": "/photos/01.webp",
+      "srcSm": "/photos/01@sm.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "alt": "Heavenly Nail Spa — photo 2",
+      "attribution": null,
+      "src": "/photos/02.webp",
+      "srcSm": "/photos/02@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Heavenly Nail Spa — photo 3",
+      "attribution": null,
+      "src": "/photos/03.webp",
+      "srcSm": "/photos/03@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Heavenly Nail Spa — photo 4",
+      "attribution": null,
+      "src": "/photos/04.webp",
+      "srcSm": "/photos/04@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Heavenly Nail Spa — photo 5",
+      "attribution": null,
+      "src": "/photos/05.webp",
+      "srcSm": "/photos/05@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Heavenly Nail Spa — photo 6",
+      "attribution": null,
+      "src": "/photos/06.webp",
+      "srcSm": "/photos/06@sm.webp",
+      "width": 1600,
+      "height": 1200
+    }
+  ],
+  "photoSource": "preview",
+  "reviews": [
+    {
+      "author": "Annie Chao",
+      "avatar": null,
+      "rating": 5,
+      "text": "Came in on a busy Saturday hoping the salon would somehow have availability for a manicure AND nail art AND a pedicure, and I was so grateful they got me squeezed in. Daisy absolutely delivered.",
+      "time": "3 months ago",
+      "url": null
+    },
+    {
+      "author": "Michelle",
+      "avatar": null,
+      "rating": 5,
+      "text": "I came here as a walk-in today and was able to get squeezed in an hour later. The shop is small, but very efficient and very clean, and everyone is very welcoming.",
+      "time": "2 months ago",
+      "url": null
+    },
+    {
+      "author": "Carina",
+      "avatar": null,
+      "rating": 5,
+      "text": "This was my first time coming here and I have never been to a nail salon with such a professional atmosphere. The experience was super nice and chill, and Helen was extremely precise with every line.",
+      "time": "3 months ago",
+      "url": null
+    },
+    {
+      "author": "Katya Lapina",
+      "avatar": null,
+      "rating": 5,
+      "text": "We had the best experience at Heavenly Nail Spa! Three of us came to treat ourselves for my mom's birthday and had the most incredible, friendly, professional service. Loved our mani pedis.",
+      "time": "4 months ago",
+      "url": null
+    },
+    {
+      "author": "Rachel Chinta",
+      "avatar": null,
+      "rating": 5,
+      "text": "Wow, this nail spa is simply amazing. If you ever want to feel pampered and feel beautiful you must visit these ladies. They are kind, loving and so professional.",
+      "time": "5 months ago",
+      "url": null
+    },
+    {
+      "author": "Kassaundra Tillman",
+      "avatar": null,
+      "rating": 5,
+      "text": "This is a beautiful relaxing environment with lovely sweet staff. From the moment I entered they were so welcoming, offering water, coffee and a snack. Beautiful nail art.",
+      "time": "1 month ago",
+      "url": null
+    }
+  ],
+  "seo": {
+    "title": "Heavenly Nail Spa | Nail Salon in Palo Alto, CA",
+    "description": "Heavenly Nail Spa is a nail salon in Palo Alto, CA. Manicures, pedicures, gel, dip powder and custom nail art. Call (650) 384-6878."
+  }
+}

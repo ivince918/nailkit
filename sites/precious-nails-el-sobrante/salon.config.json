@@ -1,0 +1,285 @@
+{
+  "slug": "precious-nails-el-sobrante",
+  "placeId": "g/1tmg6skj",
+  "generatedAt": "2026-08-24T08:48:38.531Z",
+  "name": "Precious Nails",
+  "theme": "terracotta-warm",
+  "phone": "+15107589025",
+  "phoneDisplay": "(510) 758-9025",
+  "address": {
+    "line1": "3827 San Pablo Dam Rd",
+    "city": "El Sobrante",
+    "state": "CA",
+    "zip": "94803",
+    "full": "3827 San Pablo Dam Rd, El Sobrante, CA 94803"
+  },
+  "geo": {
+    "lat": 37.9652787,
+    "lng": -122.3140886
+  },
+  "mapsUrl": "https://www.google.com/maps/place/Precious+Nails/@37.9652787,-122.3140886,17z",
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination_place_id=g/1tmg6skj&destination=3827%20San%20Pablo%20Dam%20Rd%2C%20El%20Sobrante%2C%20CA%2094803",
+  "websiteUrl": null,
+  "bookingUrl": null,
+  "utcOffsetMinutes": -420,
+  "hours": [
+    {
+      "day": 0,
+      "closed": true
+    },
+    {
+      "day": 1,
+      "open": "09:30",
+      "close": "18:00"
+    },
+    {
+      "day": 2,
+      "open": "09:30",
+      "close": "18:00"
+    },
+    {
+      "day": 3,
+      "open": "11:00",
+      "close": "17:00"
+    },
+    {
+      "day": 4,
+      "open": "09:30",
+      "close": "18:00"
+    },
+    {
+      "day": 5,
+      "open": "09:30",
+      "close": "18:00"
+    },
+    {
+      "day": 6,
+      "open": "09:30",
+      "close": "17:00"
+    }
+  ],
+  "rating": 4.7,
+  "reviewCount": 29,
+  "showRating": false,
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3145.5077311705827!2d-122.3140886!3d37.9652787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085778318da196f%3A0x50bdf94f0bff6839!2sPrecious%20Nails!5e0!3m2!1sen!2sus!4v1787560476873!5m2!1sen!2sus",
+  "priceRange": "$$",
+  "hero": {
+    "headline": "Beautiful nails, done right in El Sobrante",
+    "sub": "From a clean classic set to full custom art, Precious Nails takes the time to get it right."
+  },
+  "story": {
+    "title": "Welcome to Precious Nails",
+    "body": [
+      "Precious Nails is a full-service nail studio in El Sobrante, where a licensed team handles everything from a clean classic manicure to sculpted extensions and custom art.",
+      "Every service starts with properly sterilized tools and a fresh file. We take the time to prep the nail correctly, because that is the difference between a set that lasts a weekend and one that lasts for weeks.",
+      "We are open 6 days a week, and walk-ins are always welcome — though a quick call to (510) 758-9025 guarantees your spot."
+    ]
+  },
+  "trust": [
+    {
+      "value": "6 days",
+      "label": "Open each week"
+    },
+    {
+      "value": "Walk-ins",
+      "label": "Welcome any time"
+    },
+    {
+      "value": "Licensed",
+      "label": "Professional technicians"
+    }
+  ],
+  "why": [
+    {
+      "icon": "smile",
+      "title": "Genuinely warm service",
+      "body": "You get greeted by name, not processed through a queue. Our regulars stay regulars for a reason."
+    },
+    {
+      "icon": "shield",
+      "title": "Spotless and sanitized",
+      "body": "Fresh files, liners, and fully sterilized tools for every single guest — no exceptions."
+    },
+    {
+      "icon": "verified",
+      "title": "Meticulous attention",
+      "body": "Even cuticles, clean lines, and shaping that gets checked twice before you leave the chair."
+    },
+    {
+      "icon": "clock",
+      "title": "Work that actually lasts",
+      "body": "Proper prep and quality product mean gel and dip that hold up for weeks, not days."
+    },
+    {
+      "icon": "flower",
+      "title": "A real spa experience",
+      "body": "Massage chairs, a calm room, and time that never feels rushed — treatment, not transaction."
+    },
+    {
+      "icon": "palette",
+      "title": "Custom nail art on request",
+      "body": "Bring a screenshot or an idea. Our techs design freehand and match what you had in mind."
+    }
+  ],
+  "services": [
+    {
+      "name": "Manicures",
+      "icon": "hand",
+      "items": [
+        "Classic Manicure",
+        "Gel Manicure",
+        "Spa Manicure",
+        "French Manicure",
+        "Polish Change",
+        "Nail Trim & Shape"
+      ]
+    },
+    {
+      "name": "Pedicures",
+      "icon": "footprints",
+      "items": [
+        "Classic Pedicure",
+        "Spa Pedicure",
+        "Deluxe Pedicure",
+        "Gel Pedicure",
+        "Hot Stone Pedicure",
+        "Callus Treatment"
+      ]
+    },
+    {
+      "name": "Extensions",
+      "icon": "gem",
+      "items": [
+        "Acrylic Full Set",
+        "Acrylic Fill",
+        "Dip Powder (SNS)",
+        "Gel-X Extensions",
+        "Builder Gel",
+        "Ombré & French Fade"
+      ]
+    },
+    {
+      "name": "Nail Art",
+      "icon": "palette",
+      "items": [
+        "Custom Hand-Painted Art",
+        "Chrome & Cat Eye",
+        "Rhinestones & Charms",
+        "3D Art",
+        "Marble & Swirl",
+        "Seasonal Designs"
+      ]
+    },
+    {
+      "name": "Add-Ons",
+      "icon": "sparkles",
+      "items": [
+        "Paraffin Wax",
+        "Hot Stone Massage",
+        "Extended Massage",
+        "Nail Repair",
+        "Gel Removal",
+        "Cuticle Treatment"
+      ]
+    }
+  ],
+  "showPrices": false,
+  "amenities": [
+    "Free parking",
+    "Cards accepted",
+    "Walk-ins welcome"
+  ],
+  "social": {
+    "instagram": null,
+    "facebook": null
+  },
+  "photos": [
+    {
+      "alt": "Precious Nails — photo 1",
+      "attribution": null,
+      "src": "/photos/01.webp",
+      "srcSm": "/photos/01@sm.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "alt": "Precious Nails — photo 2",
+      "attribution": null,
+      "src": "/photos/02.webp",
+      "srcSm": "/photos/02@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Precious Nails — photo 3",
+      "attribution": null,
+      "src": "/photos/03.webp",
+      "srcSm": "/photos/03@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Precious Nails — photo 4",
+      "attribution": null,
+      "src": "/photos/04.webp",
+      "srcSm": "/photos/04@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Precious Nails — photo 5",
+      "attribution": null,
+      "src": "/photos/05.webp",
+      "srcSm": "/photos/05@sm.webp",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "alt": "Precious Nails — photo 6",
+      "attribution": null,
+      "src": "/photos/06.webp",
+      "srcSm": "/photos/06@sm.webp",
+      "width": 1600,
+      "height": 1200
+    }
+  ],
+  "photoSource": "preview",
+  "reviews": [
+    {
+      "author": "Geanette Ceballos",
+      "avatar": null,
+      "rating": 5,
+      "text": "Welcoming staff and a thorough pedicure. Very clean foot baths, and the nail tech followed up to sanitize tools with alcohol and did more cleaning between clients. New liners were used. My feet feel great!",
+      "time": "",
+      "url": null
+    },
+    {
+      "author": "Ashley Kumar",
+      "avatar": null,
+      "rating": 5,
+      "text": "The service provided here was quite nice and the nail techs were very gentle with me. I was happy with my end results.",
+      "time": "",
+      "url": null
+    },
+    {
+      "author": "Victoria Purdy",
+      "avatar": null,
+      "rating": 5,
+      "text": "Close to home! Tina did my nails today, and they were able to accommodate me as a walk-in on a Saturday. Lucky for me!",
+      "time": "",
+      "url": null
+    }
+  ],
+  "seo": {
+    "title": "Precious Nails | Nail Salon in El Sobrante, CA",
+    "description": "Precious Nails is a nail salon in El Sobrante, CA. Manicures, pedicures, gel, dip powder and custom nail art. Call (510) 758-9025."
+  },
+  "heroImage": {
+    "src": "/photos/hero-editorial-v2.webp",
+    "srcSm": "/photos/hero-editorial-v2@sm.webp",
+    "width": 1672,
+    "height": 941,
+    "smallWidth": 800,
+    "concept": true
+  }
+}

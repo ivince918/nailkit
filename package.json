@@ -1,0 +1,22 @@
+{
+  "name": "nailkit",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "sites/*"
+  ],
+  "scripts": {
+    "new": "node generator/cli.mjs",
+    "check": "node generator/check.mjs",
+    "deploy": "node generator/deploy.mjs",
+    "dev": "node generator/run.mjs dev",
+    "build": "node generator/run.mjs build",
+    "list": "node generator/list.mjs",
+    "inline": "node generator/inline.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.4"
+  }
+}

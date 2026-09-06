@@ -1,0 +1,29 @@
+{
+  "_source": "Read from the Google Maps listing on 2026-08-23. No API key. Note: this salon has NO website listed — prime prospect.",
+  "placeId": "g/1tmxr7v0",
+  "name": "Sparkle Nails",
+  "address": "34143 Fremont Blvd, Fremont, CA 94555",
+  "phone": "(510) 494-8288",
+  "rating": 4.2,
+  "reviewCount": 55,
+  "showRating": false,
+  "mapsUrl": "https://www.google.com/maps/place/Sparkle+Nails/@37.5752978,-122.0490619,17z",
+  "lat": 37.5752936,
+  "lng": -122.044191,
+  "utcOffsetMinutes": -420,
+  "hours": {
+    "default": "10:00-19:00",
+    "sat": "9:30-18:30",
+    "sun": "10:00-17:00"
+  },
+  "tags": ["relaxing atmosphere", "gel manicures", "polite staff", "nail art", "pedicures", "work", "job", "overall experience"],
+  "attributes": { "freeParking": true, "cardsAccepted": true },
+  "reviews": [
+    { "author": "Andriana Enix", "when": "8 months ago", "rating": 5,
+      "text": "I trust Jenny with my nails more than anyone. She has done my nails for my engagement, my engagement party, my bachelorette, my wedding and even my graduation. The ladies here are great and are very kind and accommodating. The prices are more than fair for the Bay Area." },
+    { "author": "Deborah Joplin", "when": "4 months ago", "rating": 5,
+      "text": "Cindy provided the best pedicure I have had in years! I will be going back every time. So thankful!" },
+    { "author": "Alexandra Alexa", "when": "5 months ago", "rating": 5,
+      "text": "Jenny does my nails each time, and I like it very much. Thank you, Sparkle Nails!" }
+  ]
+}

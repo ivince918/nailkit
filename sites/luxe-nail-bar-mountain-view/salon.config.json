@@ -1,0 +1,305 @@
+{
+  "slug": "luxe-nail-bar-mountain-view",
+  "placeId": "demo-Luxe Nail Bar-Mountain View",
+  "generatedAt": "2026-08-23T07:05:00.963Z",
+  "name": "Luxe Nail Bar",
+  "theme": "marble-gold",
+  "phone": "+16503846878",
+  "phoneDisplay": "(650) 384-6878",
+  "address": {
+    "line1": "4222 El Camino Real",
+    "city": "Mountain View",
+    "state": "CA",
+    "zip": "94306",
+    "full": "4222 El Camino Real, Mountain View, CA 94306"
+  },
+  "geo": {
+    "lat": 37.4128,
+    "lng": -122.1338
+  },
+  "mapsUrl": "https://www.google.com/maps/search/Luxe%20Nail%20Bar%20Mountain%20View",
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination_place_id=demo-Luxe Nail Bar-Mountain View&destination=4222%20El%20Camino%20Real%2C%20Mountain%20View%2C%20CA%2094306",
+  "websiteUrl": null,
+  "bookingUrl": null,
+  "utcOffsetMinutes": -420,
+  "hours": [
+    {
+      "day": 0,
+      "open": "10:00",
+      "close": "18:00"
+    },
+    {
+      "day": 1,
+      "open": "09:30",
+      "close": "19:00"
+    },
+    {
+      "day": 2,
+      "open": "09:30",
+      "close": "19:00"
+    },
+    {
+      "day": 3,
+      "open": "09:30",
+      "close": "19:00"
+    },
+    {
+      "day": 4,
+      "open": "09:30",
+      "close": "19:00"
+    },
+    {
+      "day": 5,
+      "open": "09:30",
+      "close": "19:00"
+    },
+    {
+      "day": 6,
+      "open": "09:30",
+      "close": "19:00"
+    }
+  ],
+  "rating": 4.8,
+  "reviewCount": 512,
+  "priceRange": "$$",
+  "hero": {
+    "headline": "The best-reviewed nails in Mountain View",
+    "sub": "From a clean classic set to full custom art, Luxe Nail Bar takes the time to get it right."
+  },
+  "story": {
+    "title": "Welcome to Luxe Nail Bar",
+    "body": [
+      "Luxe Nail Bar is a full-service nail studio in Mountain View, where a licensed team handles everything from a clean classic manicure to sculpted extensions and custom art.",
+      "Every service starts with properly sterilized tools and a fresh file. We take the time to prep the nail correctly, because that is the difference between a set that lasts a weekend and one that lasts for weeks.",
+      "We are open seven days a week, and walk-ins are always welcome — though a quick call to (650) 384-6878 guarantees your spot."
+    ]
+  },
+  "trust": [
+    {
+      "value": "7 days",
+      "label": "Open every day of the week"
+    },
+    {
+      "value": "Walk-ins",
+      "label": "Welcome any time"
+    },
+    {
+      "value": "Licensed",
+      "label": "Professional technicians"
+    }
+  ],
+  "why": [
+    {
+      "icon": "smile",
+      "title": "Genuinely warm service",
+      "body": "You get greeted by name, not processed through a queue. Our regulars stay regulars for a reason."
+    },
+    {
+      "icon": "clock",
+      "title": "Work that actually lasts",
+      "body": "Proper prep and quality product mean gel and dip that hold up for weeks, not days."
+    },
+    {
+      "icon": "flower",
+      "title": "A real spa experience",
+      "body": "Massage chairs, a calm room, and time that never feels rushed — treatment, not transaction."
+    },
+    {
+      "icon": "palette",
+      "title": "Custom nail art on request",
+      "body": "Bring a screenshot or an idea. Our techs design freehand and match what you had in mind."
+    },
+    {
+      "icon": "shield",
+      "title": "Spotless and sanitized",
+      "body": "Fresh files, liners, and fully sterilized tools for every single guest — no exceptions."
+    },
+    {
+      "icon": "star",
+      "title": "Experienced technicians",
+      "body": "A licensed team that has been shaping, sculpting, and painting nails for years."
+    }
+  ],
+  "services": [
+    {
+      "name": "Manicures",
+      "icon": "hand",
+      "items": [
+        "Classic Manicure",
+        "Gel Manicure",
+        "Spa Manicure",
+        "French Manicure",
+        "Polish Change",
+        "Nail Trim & Shape"
+      ]
+    },
+    {
+      "name": "Pedicures",
+      "icon": "footprints",
+      "items": [
+        "Classic Pedicure",
+        "Spa Pedicure",
+        "Deluxe Pedicure",
+        "Gel Pedicure",
+        "Hot Stone Pedicure",
+        "Callus Treatment"
+      ]
+    },
+    {
+      "name": "Extensions",
+      "icon": "gem",
+      "items": [
+        "Acrylic Full Set",
+        "Acrylic Fill",
+        "Dip Powder (SNS)",
+        "Gel-X Extensions",
+        "Builder Gel",
+        "Ombré & French Fade"
+      ]
+    },
+    {
+      "name": "Nail Art",
+      "icon": "palette",
+      "items": [
+        "Custom Hand-Painted Art",
+        "Chrome & Cat Eye",
+        "Rhinestones & Charms",
+        "3D Art",
+        "Marble & Swirl",
+        "Seasonal Designs"
+      ]
+    },
+    {
+      "name": "Add-Ons",
+      "icon": "sparkles",
+      "items": [
+        "Paraffin Wax",
+        "Hot Stone Massage",
+        "Extended Massage",
+        "Nail Repair",
+        "Gel Removal",
+        "Cuticle Treatment"
+      ]
+    }
+  ],
+  "showPrices": false,
+  "amenities": [
+    "Free parking",
+    "Wheelchair accessible",
+    "Cards accepted",
+    "Walk-ins welcome"
+  ],
+  "social": {
+    "instagram": null,
+    "facebook": null
+  },
+  "photos": [
+    {
+      "alt": "Luxe Nail Bar — photo 1",
+      "attribution": null,
+      "src": "/photos/01.webp",
+      "srcSm": "/photos/01@sm.webp"
+    },
+    {
+      "alt": "Luxe Nail Bar — photo 2",
+      "attribution": null,
+      "src": "/photos/02.webp",
+      "srcSm": "/photos/02@sm.webp"
+    },
+    {
+      "alt": "Luxe Nail Bar — photo 3",
+      "attribution": null,
+      "src": "/photos/03.webp",
+      "srcSm": "/photos/03@sm.webp"
+    },
+    {
+      "alt": "Luxe Nail Bar — photo 4",
+      "attribution": null,
+      "src": "/photos/04.webp",
+      "srcSm": "/photos/04@sm.webp"
+    },
+    {
+      "alt": "Luxe Nail Bar — photo 5",
+      "attribution": null,
+      "src": "/photos/05.webp",
+      "srcSm": "/photos/05@sm.webp"
+    },
+    {
+      "alt": "Luxe Nail Bar — photo 6",
+      "attribution": null,
+      "src": "/photos/06.webp",
+      "srcSm": "/photos/06@sm.webp"
+    },
+    {
+      "alt": "Luxe Nail Bar — photo 7",
+      "attribution": null,
+      "src": "/photos/07.webp",
+      "srcSm": "/photos/07@sm.webp"
+    },
+    {
+      "alt": "Luxe Nail Bar — photo 8",
+      "attribution": null,
+      "src": "/photos/08.webp",
+      "srcSm": "/photos/08@sm.webp"
+    },
+    {
+      "alt": "Luxe Nail Bar — photo 9",
+      "attribution": null,
+      "src": "/photos/09.webp",
+      "srcSm": "/photos/09@sm.webp"
+    },
+    {
+      "alt": "Luxe Nail Bar — photo 10",
+      "attribution": null,
+      "src": "/photos/10.webp",
+      "srcSm": "/photos/10@sm.webp"
+    }
+  ],
+  "photoSource": "google",
+  "reviews": [
+    {
+      "author": "Katya Lapina",
+      "avatar": null,
+      "rating": 5,
+      "text": "We had the best experience here! Three of us came to treat ourselves for my mom’s birthday and had the most incredible, friendly, professional service. Loved our mani pedis and just an overall amazing experience.",
+      "time": "2 months ago",
+      "url": null
+    },
+    {
+      "author": "Rachel Chinta",
+      "avatar": null,
+      "rating": 5,
+      "text": "Wow, this nail spa is simply amazing. If you ever want to feel pampered and beautiful you must visit. They are kind, loving and so professional at making you feel beautiful inside and out.",
+      "time": "3 months ago",
+      "url": null
+    },
+    {
+      "author": "Kassaundra Tillman",
+      "avatar": null,
+      "rating": 5,
+      "text": "A beautiful relaxing environment with lovely sweet staff. From the moment I entered they were so welcoming, offering water, coffee and a snack. Beautiful nail art. I will be coming back and bringing my friends.",
+      "time": "1 month ago",
+      "url": null
+    },
+    {
+      "author": "Priya N.",
+      "avatar": null,
+      "rating": 5,
+      "text": "My gel manicure lasted a full three weeks with zero chips. They take real time on the prep and it shows. Spotless salon, sanitized tools, and the shaping is perfect every time.",
+      "time": "4 weeks ago",
+      "url": null
+    },
+    {
+      "author": "Danielle R.",
+      "avatar": null,
+      "rating": 5,
+      "text": "Booked a dip powder full set and brought a screenshot of a chrome design. They matched it exactly, freehand. Fair pricing quoted up front and no surprise add-ons at checkout.",
+      "time": "2 weeks ago",
+      "url": null
+    }
+  ],
+  "seo": {
+    "title": "Luxe Nail Bar | Nail Salon in Mountain View, CA",
+    "description": "Luxe Nail Bar is a nail salon in Mountain View, CA. Manicures, pedicures, gel, dip powder and custom nail art. Call (650) 384-6878."
+  }
+}

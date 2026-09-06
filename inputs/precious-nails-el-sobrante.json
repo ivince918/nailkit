@@ -1,0 +1,63 @@
+{
+  "_source": "Read from the Google Maps listing on 2026-08-23. No website listed \u2014 prime prospect. Review dates omitted on purpose: the newest Google review is 3 years old and showing that would hurt them. The text and authors are real and unaltered.",
+  "placeId": "g/1tmg6skj",
+  "name": "Precious Nails",
+  "address": "3827 San Pablo Dam Rd, El Sobrante, CA 94803",
+  "phone": "(510) 758-9025",
+  "rating": 4.7,
+  "reviewCount": 29,
+  "showRating": false,
+  "mapsUrl": "https://www.google.com/maps/place/Precious+Nails/@37.9652787,-122.3140886,17z",
+  "lat": 37.9652787,
+  "lng": -122.3140886,
+  "utcOffsetMinutes": -420,
+  "hours": {
+    "mon": "9:30-18:00",
+    "tue": "9:30-18:00",
+    "wed": "11:00-17:00",
+    "thu": "9:30-18:00",
+    "fri": "9:30-18:00",
+    "sat": "9:30-17:00",
+    "sun": "closed"
+  },
+  "tags": [
+    "gentle",
+    "pedicure",
+    "clean",
+    "sanitize",
+    "walk in",
+    "welcoming staff",
+    "thorough",
+    "good job"
+  ],
+  "attributes": {
+    "freeParking": true,
+    "cardsAccepted": true
+  },
+  "reviews": [
+    {
+      "author": "Geanette Ceballos",
+      "rating": 5,
+      "text": "Welcoming staff and a thorough pedicure. Very clean foot baths, and the nail tech followed up to sanitize tools with alcohol and did more cleaning between clients. New liners were used. My feet feel great!"
+    },
+    {
+      "author": "Ashley Kumar",
+      "rating": 5,
+      "text": "The service provided here was quite nice and the nail techs were very gentle with me. I was happy with my end results."
+    },
+    {
+      "author": "Victoria Purdy",
+      "rating": 5,
+      "text": "Close to home! Tina did my nails today, and they were able to accommodate me as a walk-in on a Saturday. Lucky for me!"
+    }
+  ],
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3145.5077311705827!2d-122.3140886!3d37.9652787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085778318da196f%3A0x50bdf94f0bff6839!2sPrecious%20Nails!5e0!3m2!1sen!2sus!4v1787560476873!5m2!1sen!2sus",
+  "heroImage": {
+    "src": "/photos/hero-editorial-v2.webp",
+    "srcSm": "/photos/hero-editorial-v2@sm.webp",
+    "width": 1672,
+    "height": 941,
+    "smallWidth": 800,
+    "concept": true
+  }
+}

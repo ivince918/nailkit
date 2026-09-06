@@ -1,0 +1,20 @@
+{
+  "name": "@nailkit/template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.jsx",
+  "exports": {
+    ".": "./src/index.jsx",
+    "./styles.css": "./src/styles.css",
+    "./tailwind-preset": "./src/tailwind-preset.js",
+    "./themes": "./src/themes.js"
+  },
+  "dependencies": {
+    "lucide-react": "^0.408.0"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

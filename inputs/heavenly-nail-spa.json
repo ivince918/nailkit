@@ -1,0 +1,32 @@
+{
+  "_source": "Read from the Google Maps listing on 2026-08-23. No API key involved.",
+  "name": "Heavenly Nail Spa",
+  "address": "4222 El Camino Real, Palo Alto, CA 94306",
+  "phone": "(650) 384-6878",
+  "rating": 4.8,
+  "reviewCount": 1122,
+  "website": "https://heavenlynailandspa.com",
+  "bookingUrl": "https://heavenlynailandspa.com/booking/",
+  "mapsUrl": "https://www.google.com/maps/search/Heavenly+Nail+Spa+4222+El+Camino+Real+Palo+Alto",
+  "lat": 37.4128,
+  "lng": -122.1338,
+  "utcOffsetMinutes": -420,
+  "theme": "marble-gold",
+  "hours": { "default": "9:00-19:00", "sun": "9:00-18:00" },
+  "tags": ["gel manicure", "friendly nail techs", "eyebrow wax", "kind staff", "nail art", "clean", "walk in", "pedicure", "precise"],
+  "attributes": { "cardsAccepted": true },
+  "reviews": [
+    { "author": "Annie Chao", "when": "3 months ago", "rating": 5,
+      "text": "Came in on a busy Saturday hoping the salon would somehow have availability for a manicure AND nail art AND a pedicure, and I was so grateful they got me squeezed in. Daisy absolutely delivered." },
+    { "author": "Michelle", "when": "2 months ago", "rating": 5,
+      "text": "I came here as a walk-in today and was able to get squeezed in an hour later. The shop is small, but very efficient and very clean, and everyone is very welcoming." },
+    { "author": "Carina", "when": "3 months ago", "rating": 5,
+      "text": "This was my first time coming here and I have never been to a nail salon with such a professional atmosphere. The experience was super nice and chill, and Helen was extremely precise with every line." },
+    { "author": "Katya Lapina", "when": "4 months ago", "rating": 5,
+      "text": "We had the best experience at Heavenly Nail Spa! Three of us came to treat ourselves for my mom's birthday and had the most incredible, friendly, professional service. Loved our mani pedis." },
+    { "author": "Rachel Chinta", "when": "5 months ago", "rating": 5,
+      "text": "Wow, this nail spa is simply amazing. If you ever want to feel pampered and feel beautiful you must visit these ladies. They are kind, loving and so professional." },
+    { "author": "Kassaundra Tillman", "when": "1 month ago", "rating": 5,
+      "text": "This is a beautiful relaxing environment with lovely sweet staff. From the moment I entered they were so welcoming, offering water, coffee and a snack. Beautiful nail art." }
+  ]
+}

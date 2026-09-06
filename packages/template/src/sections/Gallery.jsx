@@ -1,0 +1,67 @@
+import React, { useState } from 'react'
+import { Expand } from 'lucide-react'
+import { Section, SectionHead, Lightbox } from '../components/Primitives.jsx'
+
+/*
+ * Bento grid. The span pattern tiles perfectly in groups of 8 across 4 columns,
+ * and `grid-flow-dense` backfills the remainder so a salon with 5 photos or 11
+ * still gets a solid block with no holes.
+ */
+const SPANS = [
+  'md:col-span-2 md:row-span-2',
+  '',
+  '',
+  'md:col-span-2',
+  'md:col-span-2',
+  'md:col-span-2 md:row-span-2',
+  '',
+  '',
+]
+
+export function Gallery({ config }) {
+  if ((config.photos || []).length < 6) return null
+  const { photos = [], name } = config
+  const [open, setOpen] = useState(null)
+  if (photos.length < 2) return null
+
+  const shown = photos.slice(0, 12)
+
+  return (
+    <Section id="gallery" band>
+      <SectionHead
+        eyebrow="Our Gallery"
+        title="Recent work"
+        blurb={`A look at what our team has been doing at ${name}.`}
+      />
+
+      <div className="mt-14 grid auto-rows-[150px] grid-flow-dense grid-cols-2 gap-3 sm:auto-rows-[180px] md:grid-cols-4 md:gap-4">
+        {shown.map((p, i) => (
+          <button
+            key={p.src}
+            onClick={() => setOpen(i)}
+            aria-label={`View photo ${i + 1} of ${shown.length}`}
+            className={`reveal reveal-img group relative overflow-hidden ${SPANS[i % SPANS.length]}`}
+            style={{ borderRadius: 'var(--radius-sm)', transitionDelay: `${(i % 8) * 60}ms` }}
+          >
+            <img
+              src={p.src}
+              srcSet={p.srcSm ? `${p.srcSm} 800w, ${p.src} 1600w` : undefined}
+              sizes="(max-width: 768px) 50vw, 25vw"
+              alt={p.alt || `${name} nail work`}
+              loading={i < 4 ? 'eager' : 'lazy'}
+              className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]"
+            />
+            <span className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/25" />
+            <span className="absolute bottom-3 right-3 grid h-8 w-8 place-items-center rounded-full bg-white/90 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <Expand size={14} className="text-black" />
+            </span>
+          </button>
+        ))}
+      </div>
+
+      {open !== null && (
+        <Lightbox photos={shown} index={open} onIndex={setOpen} onClose={() => setOpen(null)} />
+      )}
+    </Section>
+  )
+}

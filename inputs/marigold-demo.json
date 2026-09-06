@@ -1,0 +1,30 @@
+{
+  "_source": "FICTIONAL demo salon. Invented name, invented address, reserved 555-01xx phone number. Exists to show the template without putting a real business's identity on a public URL.",
+  "name": "Marigold Nail Studio",
+  "address": "1840 Vireo Lane, Palo Alto, CA 94306",
+  "phone": "(650) 555-0142",
+  "rating": 4.9,
+  "reviewCount": 486,
+  "bookingUrl": "https://example.com/book",
+  "lat": 37.4241,
+  "lng": -122.1385,
+  "utcOffsetMinutes": -420,
+  "theme": "blush-modern",
+  "hours": { "default": "9:30-19:00", "sun": "10:00-18:00", "mon": "closed" },
+  "tags": ["gel manicure", "nail art", "dip powder", "eyebrow wax", "lash lift", "kind staff", "clean", "relaxing", "precise", "walk in"],
+  "attributes": { "freeParking": true, "wheelchairAccessible": true, "cardsAccepted": true },
+  "reviews": [
+    { "author": "Dana W.", "when": "2 weeks ago", "rating": 5,
+      "text": "My gel set lasted three full weeks with no chips or lifting. They spend real time on the prep instead of rushing straight to color, and you can tell the difference by week two." },
+    { "author": "Priya S.", "when": "1 month ago", "rating": 5,
+      "text": "Brought in a screenshot of a chrome French design I was sure was too fussy to copy. They matched it freehand, quoted the price up front, and there were no surprise add-ons at checkout." },
+    { "author": "Marisol T.", "when": "3 weeks ago", "rating": 5,
+      "text": "Walked in on a Saturday afternoon and got a straight answer about the wait instead of being parked for an hour. Spotless space, fresh file out of the packet, genuinely warm staff." },
+    { "author": "Renee K.", "when": "2 months ago", "rating": 5,
+      "text": "The pedicure is the most relaxing hour of my month. Massage chairs, quiet room, and nobody makes you feel rushed out of the seat when they are busy." },
+    { "author": "Alicia B.", "when": "5 weeks ago", "rating": 5,
+      "text": "I am picky about shaping and they got my almond set even on the first try. She checked both hands against each other twice before sending me to dry." },
+    { "author": "Joy N.", "when": "1 week ago", "rating": 5,
+      "text": "Took my daughter for her birthday and they treated her like a regular client. Sweet, patient, and the whole thing was priced fairly for what we got." }
+  ]
+}
