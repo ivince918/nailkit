@@ -195,52 +195,12 @@
   },
   "photos": [
     {
-      "alt": "Precious Nails — photo 1",
+      "alt": "A manicure in progress at the salon table",
       "attribution": null,
       "src": "/photos/01.webp",
       "srcSm": "/photos/01@sm.webp",
       "width": 1672,
       "height": 941
-    },
-    {
-      "alt": "Precious Nails — photo 2",
-      "attribution": null,
-      "src": "/photos/02.webp",
-      "srcSm": "/photos/02@sm.webp",
-      "width": 1600,
-      "height": 1200
-    },
-    {
-      "alt": "Precious Nails — photo 3",
-      "attribution": null,
-      "src": "/photos/03.webp",
-      "srcSm": "/photos/03@sm.webp",
-      "width": 1600,
-      "height": 1200
-    },
-    {
-      "alt": "Precious Nails — photo 4",
-      "attribution": null,
-      "src": "/photos/04.webp",
-      "srcSm": "/photos/04@sm.webp",
-      "width": 1600,
-      "height": 1200
-    },
-    {
-      "alt": "Precious Nails — photo 5",
-      "attribution": null,
-      "src": "/photos/05.webp",
-      "srcSm": "/photos/05@sm.webp",
-      "width": 1600,
-      "height": 1200
-    },
-    {
-      "alt": "Precious Nails — photo 6",
-      "attribution": null,
-      "src": "/photos/06.webp",
-      "srcSm": "/photos/06@sm.webp",
-      "width": 1600,
-      "height": 1200
     }
   ],
   "photoSource": "preview",

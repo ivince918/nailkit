@@ -117,6 +117,24 @@ Flags for `new`: `--from=<file>` · `--theme=<id>` · `--booking=<url>` · `--pl
 
 ---
 
+## Temporary preview hosting (Cloudflare Workers)
+
+For a pitch you want a URL, not a file. Static assets on Workers is free, needs no domain,
+and takes one command. `sites/precious-nails-el-sobrante/wrangler.jsonc` is the working example.
+
+```bash
+npm run build -- <slug>
+cd sites/<slug> && npx wrangler deploy        # -> https://<name>.<account>.workers.dev
+npx wrangler delete                           # tear it down when the pitch is over
+```
+
+Two things the preview carries that a live site must not:
+
+- `public/_headers` sets `X-Robots-Tag: noindex` so the workers.dev URL never gets indexed under
+  the salon's name. `npm run check` fails until it is deleted.
+- There is no `/api/book` on Workers, so the request form falls back to a prefilled SMS to the
+  salon. That is the right behaviour for a demo; the Twilio path needs the Vercel deploy.
+
 ## Sending a prospect one file
 
 ```bash
@@ -178,6 +196,8 @@ Rules the pipeline follows:
   artifacts; a PNG source means WebP is the only lossy step.
 - **`srcSet` + `sizes="100vw"`** so phones fetch the 800px file, not the full hero, and
   `fetchPriority="high"` because the hero is the LCP element.
+- **The gallery needs at least 6 photos** (8 tiles the bento perfectly, 12 max). Below six the
+  section and its nav links drop out rather than rendering a grid with holes.
 - **Aim for ~1600px wide minimum.** At a 1440px viewport a 1672px source is a 1.13x
   downscale and looks sharp; the 459px image it replaced was a 3.1x upscale and looked it.
 

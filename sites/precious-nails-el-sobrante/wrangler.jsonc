@@ -1,0 +1,11 @@
+{
+  // Temporary preview host for the pitch. Static assets only; the booking form
+  // falls back to a prefilled SMS because /api/book (Vercel) does not exist here.
+  // Deploy:  npm run build -- precious-nails-el-sobrante && cd sites/precious-nails-el-sobrante && npx wrangler deploy
+  // Remove:  npx wrangler delete
+  "name": "precious-nails-preview",
+  // Brian's Cloudflare account (brile761@gmail.com), not Ket's.
+  "account_id": "9483cfb5d7dd37f65101a882f3f384b9",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "./dist" }
+}

@@ -51,7 +51,7 @@ export function Section({ id, className = '', band = false, children, style }) {
 export function SectionHead({ eyebrow, title, blurb, center = true, className = '' }) {
   return (
     <div className={`${center ? 'text-center mx-auto max-w-2xl' : 'max-w-2xl'} ${className}`}>
-      {eyebrow && <p className="eyebrow reveal">{eyebrow}</p>}
+      {eyebrow && <p className="eyebrow eyebrow-mark reveal">{eyebrow}</p>}
       <h2 className="display reveal mt-3 text-[clamp(30px,5vw,52px)]" style={{ transitionDelay: '60ms' }}>
         {title}
       </h2>

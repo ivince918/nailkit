@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Phone, MapPin, Menu, X, Instagram, Facebook, Star } from 'lucide-react'
 import { Masthead } from '../components/Masthead.jsx'
+import { hasGallery } from './Gallery.jsx'
 
 const NAV = [
   { label: 'Services', href: '#services' },
@@ -9,6 +10,16 @@ const NAV = [
   { label: 'Book', href: '#booking' },
   { label: 'Visit Us', href: '#visit' },
 ]
+
+/** Links only to sections that will actually render for this salon. */
+export function navFor(config) {
+  const present = {
+    '#gallery': hasGallery(config),
+    '#reviews': (config.reviews || []).length > 0,
+    '#booking': (config.hours || []).length > 0 && (config.services || []).length > 0,
+  }
+  return NAV.filter((n) => present[n.href] !== false)
+}
 
 /** Utility strip above the nav: socials on the left, Google rating + call on the right. */
 export function TopBar({ config }) {
@@ -54,6 +65,7 @@ export function Nav({ config }) {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const { name, phone, phoneDisplay, bookingUrl } = config
+  const links = navFor(config)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16)
@@ -83,7 +95,7 @@ export function Nav({ config }) {
         <Masthead config={config} className="pr-3" />
 
         <nav className="hidden lg:flex items-center gap-8" aria-label="Main">
-          {NAV.map((n) => (
+          {links.map((n) => (
             <a
               key={n.href}
               href={n.href}
@@ -114,7 +126,7 @@ export function Nav({ config }) {
       {open && (
         <div className="lg:hidden border-t" style={{ borderColor: 'var(--line)', background: 'var(--bg)' }}>
           <nav className="mx-auto max-w-shell px-5 py-3" aria-label="Mobile">
-            {NAV.map((n) => (
+            {links.map((n) => (
               <a
                 key={n.href}
                 href={n.href}

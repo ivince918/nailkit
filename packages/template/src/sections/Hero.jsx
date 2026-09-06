@@ -43,8 +43,8 @@ export function TrustBar({ config }) {
   return (
     <div className="border-b" style={{ background: 'var(--surface)', borderColor: 'var(--line)' }}>
       <div className="mx-auto flex max-w-shell flex-wrap justify-center gap-y-8 px-5 sm:px-8 py-10">
-        {stats.slice(0, 4).map((s, i) => (
-          <div key={i} className="reveal basis-1/2 text-center sm:basis-1/4" style={{ transitionDelay: `${i * 70}ms` }}>
+        {stats.slice(0, 4).map((s, i, all) => (
+          <div key={i} className={`reveal text-center sm:basis-1/4 ${all.length === 3 ? 'basis-1/3' : 'basis-1/2'}`} style={{ transitionDelay: `${i * 70}ms` }}>
             <div className="display text-[26px] sm:text-[32px]" style={{ color: 'var(--accent)' }}>{s.value}</div>
             <div className="mt-1.5 text-[12.5px] leading-snug" style={{ color: 'var(--muted)' }}>{s.label}</div>
           </div>

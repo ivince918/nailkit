@@ -18,11 +18,18 @@ const SPANS = [
   '',
 ]
 
+/*
+ * The gallery only renders with a real set of photos. Below six it would be a
+ * bento with holes, so the section (and its nav links) drop out entirely until
+ * the salon sends enough of its own work.
+ */
+export const GALLERY_MIN = 6
+export const hasGallery = (config) => (config.photos || []).length >= GALLERY_MIN
+
 export function Gallery({ config }) {
-  if ((config.photos || []).length < 6) return null
   const { photos = [], name } = config
   const [open, setOpen] = useState(null)
-  if (photos.length < 2) return null
+  if (!hasGallery(config)) return null
 
   const shown = photos.slice(0, 12)
 

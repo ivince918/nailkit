@@ -27,7 +27,14 @@ cfg.photoSource === 'owner'
   ? pass.push('Photos are owner-supplied')
   : fail.push(`${SOURCE_NOTE[cfg.photoSource] || 'Photos are not owner-supplied.'} Replace sites/${slug}/public/photos/, then set "photoSource": "owner" in salon.config.json.`)
 
-cfg.photos?.length >= 6 ? pass.push(`${cfg.photos.length} photos`) : warn.push(`Only ${cfg.photos?.length ?? 0} photos — the gallery wants 8+.`)
+cfg.photos?.length >= 6 ? pass.push(`${cfg.photos.length} photos`) : warn.push(`Only ${cfg.photos?.length ?? 0} photos — the gallery section stays hidden until there are 6+.`)
+
+// A preview deploy ships public/_headers with X-Robots-Tag: noindex so the
+// temporary URL never gets indexed under the salon's name. It must not go live.
+const headersPath = path.join(dir, 'public', '_headers')
+if (fs.existsSync(headersPath) && /noindex/i.test(fs.readFileSync(headersPath, 'utf8')))
+  fail.push(`public/_headers still carries noindex (preview-only). Delete sites/${slug}/public/_headers before launch.`)
+else pass.push('No preview noindex header')
 cfg.phone ? pass.push(`Phone ${cfg.phoneDisplay}`) : fail.push('No phone number.')
 cfg.hours?.some((h) => !h.closed) ? pass.push('Hours set') : fail.push('No opening hours.')
 cfg.address?.line1 ? pass.push('Street address set') : fail.push('No street address.')

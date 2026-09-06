@@ -31,7 +31,7 @@ export function Services({ config }) {
               key={s.name}
               onClick={() => setActive(i)}
               aria-pressed={on}
-              className="card card-hover reveal group w-full p-6 text-left sm:w-[calc(50%-8px)] lg:w-[calc(25%-12px)]"
+              className={`card card-hover reveal group w-full p-6 text-left sm:w-[calc(50%-8px)] ${services.length === 5 ? 'lg:w-[calc(20%-13px)]' : 'lg:w-[calc(25%-12px)]'}`}
               style={{
                 transitionDelay: `${i * 55}ms`,
                 borderColor: on ? 'var(--accent)' : 'var(--line)',
