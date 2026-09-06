@@ -66,7 +66,7 @@ export function Gallery({ config, full = false }) {
       {rest > 0 && (
         <div className="reveal mt-10 text-center">
           <a href={links.gallery} className="btn btn-ghost">
-            See all {photos.length} sets <ArrowRight size={15} />
+            See more <ArrowRight size={15} />
           </a>
         </div>
       )}
