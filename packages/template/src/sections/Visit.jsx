@@ -75,7 +75,7 @@ export function Visit({ config }) {
 
   return (
     <Section id="visit" band>
-      <SectionHead eyebrow="Visit Us" title="Find us & opening hours" />
+      <SectionHead title="Find us & opening hours" />
 
       <div className="mt-14 grid gap-6 lg:grid-cols-5">
         <div className="card reveal overflow-hidden lg:col-span-3" style={{ padding: 0, minHeight: 320 }}>
@@ -158,14 +158,16 @@ export function Visit({ config }) {
 
 /** Full-bleed closing CTA. */
 export function BookCTA({ config }) {
-  const { phone, phoneDisplay, bookingUrl, name } = config
+  const { phone, phoneDisplay, bookingUrl, name, hours = [] } = config
+  const openDays = hours.filter((h) => !h.closed).length
+  const WORDS = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven']
   return (
     <section className="relative overflow-hidden px-5 sm:px-8 py-24 sm:py-32 text-center" style={{ background: 'var(--invert-bg)' }}>
       <div className="grain" />
       <div className="relative mx-auto max-w-2xl" style={{ color: 'var(--invert-fg)' }}>
-        <h2 className="display reveal text-[clamp(30px,5.4vw,54px)]">Ready for your next appointment?</h2>
+        <h2 className="display reveal text-[clamp(30px,5.4vw,54px)]">Book your next visit</h2>
         <p className="reveal mt-5 text-[16px] leading-relaxed opacity-70" style={{ transitionDelay: '70ms' }}>
-          Walk-ins are welcome, but booking ahead guarantees your time with us at {name}.
+          Walk-ins are welcome {WORDS[openDays] || openDays} days a week. Call ahead and {name} holds your chair.
         </p>
         <div className="reveal mt-9 flex flex-wrap justify-center gap-3" style={{ transitionDelay: '140ms' }}>
           {bookingUrl && (

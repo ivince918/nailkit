@@ -70,55 +70,55 @@
   "story": {
     "title": "Welcome to Precious Nails",
     "body": [
-      "Precious Nails is a full-service nail studio in El Sobrante, where a licensed team handles everything from a clean classic manicure to sculpted extensions and custom art.",
-      "Every service starts with properly sterilized tools and a fresh file. We take the time to prep the nail correctly, because that is the difference between a set that lasts a weekend and one that lasts for weeks.",
-      "We are open 6 days a week, and walk-ins are always welcome — though a quick call to (510) 758-9025 guarantees your spot."
+      "Precious Nails is a full-service nail studio on San Pablo Dam Road in El Sobrante. A licensed team handles everything from a classic manicure to sculpted extensions and hand-painted art.",
+      "Every service starts with sterilized tools and a fresh file. Careful prep is the reason a gel or dip set from here holds for weeks.",
+      "We are open six days a week and walk-ins are welcome. A quick call to (510) 758-9025 holds your chair."
     ]
   },
   "trust": [
     {
-      "value": "6 days",
-      "label": "Open each week"
+      "value": "Open Mon to Sat",
+      "label": ""
     },
     {
       "value": "Walk-ins",
-      "label": "Welcome any time"
+      "label": "welcome"
     },
     {
       "value": "Licensed",
-      "label": "Professional technicians"
+      "label": "technicians"
     }
   ],
   "why": [
     {
       "icon": "smile",
-      "title": "Genuinely warm service",
-      "body": "You get greeted by name, not processed through a queue. Our regulars stay regulars for a reason."
+      "title": "Greeted by name",
+      "body": "Reviewers keep using the word welcoming. The team knows its regulars, and first-timers get the same treatment."
     },
     {
       "icon": "shield",
-      "title": "Spotless and sanitized",
-      "body": "Fresh files, liners, and fully sterilized tools for every single guest — no exceptions."
+      "title": "Clean, every time",
+      "body": "New liner in the foot bath, a fresh file, and tools sanitized between guests. One reviewer watched it happen."
     },
     {
       "icon": "verified",
-      "title": "Meticulous attention",
-      "body": "Even cuticles, clean lines, and shaping that gets checked twice before you leave the chair."
+      "title": "Careful work",
+      "body": "Even cuticles, clean lines, and shaping checked before you leave the chair."
     },
     {
       "icon": "clock",
-      "title": "Work that actually lasts",
-      "body": "Proper prep and quality product mean gel and dip that hold up for weeks, not days."
+      "title": "Sets that last",
+      "body": "Proper prep and quality product mean gel and dip hold for weeks."
     },
     {
       "icon": "flower",
-      "title": "A real spa experience",
-      "body": "Massage chairs, a calm room, and time that never feels rushed — treatment, not transaction."
+      "title": "Nobody rushes you",
+      "body": "Massage chairs, a quiet room, and technicians who take their time."
     },
     {
       "icon": "palette",
-      "title": "Custom nail art on request",
-      "body": "Bring a screenshot or an idea. Our techs design freehand and match what you had in mind."
+      "title": "Custom art on request",
+      "body": "Bring a screenshot or describe it. The techs paint freehand."
     }
   ],
   "services": [
@@ -195,15 +195,55 @@
   },
   "photos": [
     {
-      "alt": "A manicure in progress at the salon table",
-      "attribution": null,
+      "alt": "Rust and gold glitter ombré on a long coffin set",
+      "attribution": "Yelp",
       "src": "/photos/01.webp",
       "srcSm": "/photos/01@sm.webp",
-      "width": 1672,
-      "height": 941
+      "width": 792,
+      "height": 1000
+    },
+    {
+      "alt": "Sheer pink ombré with silver glitter and crystal accents",
+      "attribution": "Yelp",
+      "src": "/photos/02.webp",
+      "srcSm": "/photos/02@sm.webp",
+      "width": 1000,
+      "height": 750
+    },
+    {
+      "alt": "Nude glitter set with gold foil and rhinestone accents",
+      "attribution": "Yelp",
+      "src": "/photos/03.webp",
+      "srcSm": "/photos/03@sm.webp",
+      "width": 835,
+      "height": 1000
+    },
+    {
+      "alt": "White French tips with crystal clusters",
+      "attribution": "Yelp",
+      "src": "/photos/04.webp",
+      "srcSm": "/photos/04@sm.webp",
+      "width": 1000,
+      "height": 887
+    },
+    {
+      "alt": "Burgundy stiletto set with gold studs and glitter fade",
+      "attribution": "Yelp",
+      "src": "/photos/05.webp",
+      "srcSm": "/photos/05@sm.webp",
+      "width": 750,
+      "height": 1000
+    },
+    {
+      "alt": "Mauve almond set with hand-painted marble accent nails",
+      "attribution": "Yelp",
+      "src": "/photos/06.webp",
+      "srcSm": "/photos/06@sm.webp",
+      "width": 758,
+      "height": 1000
     }
   ],
-  "photoSource": "preview",
+  "photoSource": "yelp",
   "reviews": [
     {
       "author": "Geanette Ceballos",

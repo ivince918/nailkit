@@ -22,6 +22,7 @@ const fail = [], warn = [], pass = []
 const SOURCE_NOTE = {
   google: 'Photos came from the Google Places API — licensed for the pitch preview only.',
   preview: 'Photos are generated placeholders, not real salon photography.',
+  yelp: 'Photos were saved from the salon\'s Yelp page: fine for the pitch preview, not for a live site without the owner\'s own copies or permission.',
 }
 cfg.photoSource === 'owner'
   ? pass.push('Photos are owner-supplied')

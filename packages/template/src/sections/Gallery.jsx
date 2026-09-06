@@ -18,6 +18,17 @@ const SPANS = [
   '',
 ]
 
+/* Exactly six photos is the common case for a new salon; the eight-pattern
+   leaves one hole there, and this 4x3 arrangement tiles it with none. */
+const SIX_SPANS = [
+  'md:col-span-2 md:row-span-2',
+  '',
+  '',
+  'md:col-span-2 md:row-span-2',
+  '',
+  '',
+]
+
 /*
  * The gallery only renders with a real set of photos. Below six it would be a
  * bento with holes, so the section (and its nav links) drop out entirely until
@@ -36,7 +47,6 @@ export function Gallery({ config }) {
   return (
     <Section id="gallery" band>
       <SectionHead
-        eyebrow="Our Gallery"
         title="Recent work"
         blurb={`A look at what our team has been doing at ${name}.`}
       />
@@ -47,7 +57,7 @@ export function Gallery({ config }) {
             key={p.src}
             onClick={() => setOpen(i)}
             aria-label={`View photo ${i + 1} of ${shown.length}`}
-            className={`reveal reveal-img group relative overflow-hidden ${SPANS[i % SPANS.length]}`}
+            className={`reveal reveal-img group relative overflow-hidden ${shown.length === 6 ? SIX_SPANS[i] : SPANS[i % SPANS.length]}`}
             style={{ borderRadius: 'var(--radius-sm)', transitionDelay: `${(i % 8) * 60}ms` }}
           >
             <img

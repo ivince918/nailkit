@@ -63,7 +63,7 @@ export default function SalonSite({ config }) {
       <Footer config={config} />
       <div className="mobile-booking-bar">
         <a href={`tel:${config.phone}`}>Call the salon</a>
-        <a className="btn btn-primary" href={config.bookingUrl || '#booking'}>Request a visit <span aria-hidden="true">↗</span></a>
+        <a className="btn btn-primary" href={config.bookingUrl || '#booking'}>Request a time <span aria-hidden="true">↗</span></a>
       </div>
       </div>
     </div>

@@ -178,9 +178,8 @@ export function Booking({ config }) {
   return (
     <Section id="booking" band>
       <SectionHead
-        eyebrow="Booking"
         title="Request an appointment"
-        blurb={`Pick a service and a time that suits you. ${name} confirms every request by text — walk-ins are always welcome too.`}
+        blurb={`Pick a service and a time. ${name} confirms by text. Walk-ins are welcome too.`}
       />
 
       <form onSubmit={submit} className="booking-form reveal mx-auto mt-12">
@@ -195,12 +194,7 @@ export function Booking({ config }) {
                   type="button"
                   onClick={() => { setCategory(i); setService(''); }}
                   aria-pressed={category === i}
-                  className="rounded-full px-4 py-2 text-[13.5px] font-medium transition-colors"
-                  style={
-                    category === i
-                      ? { background: 'var(--ink)', color: 'var(--bg)' }
-                      : { background: 'var(--band)', color: 'var(--ink)', border: '1px solid var(--line)' }
-                  }
+                  className={`chip ${category === i ? 'chip-on' : ''}`}
                 >
                   {c.name}
                 </button>
@@ -213,12 +207,7 @@ export function Booking({ config }) {
                   type="button"
                   onClick={() => setService(label)}
                   aria-pressed={service === label}
-                  className="rounded-full px-4 py-2 text-[13.5px] transition-colors"
-                  style={
-                    service === label
-                      ? { background: 'var(--accent)', color: 'var(--on-accent)' }
-                      : { background: 'var(--band)', color: 'var(--ink)', border: '1px solid var(--line)' }
-                  }
+                  className={`chip ${service === label ? 'chip-accent' : ''}`}
                 >
                   {label}
                 </button>
@@ -318,7 +307,7 @@ export function Booking({ config }) {
               >
                 <AlertCircle size={16} className="mt-0.5 shrink-0" style={{ color: 'var(--accent)' }} />
                 <span>
-                  This preview can't send the request. Text it to {name} directly —{' '}
+                  This preview can't send the request. Text it to {name} directly:{' '}
                   <a className="underline" href={smsHref()}>open a prefilled message</a>, or call{' '}
                   <a className="underline" href={`tel:${phone}`}>{phoneDisplay}</a>.
                 </span>

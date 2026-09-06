@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { ArrowRight, Phone, Check } from 'lucide-react'
 import { Section, SectionHead } from '../components/Primitives.jsx'
-import { Icon } from '../components/icons.jsx'
 
 /*
- * Category grid + a menu panel that swaps below it. Heavenly's layout uses
- * "View menu" tiles; expanding in place would jump the grid, so the selected
- * category renders into a fixed panel underneath instead.
+ * Category chips + a menu panel that swaps below them. The chips are the same
+ * control the booking form uses, so picking a category here and picking one
+ * there feel like one system. Expanding in place would jump the layout, so the
+ * selected category renders into a fixed panel underneath instead.
  */
 export function Services({ config }) {
   const { services = [], showPrices = false, phone, bookingUrl } = config
@@ -18,54 +18,31 @@ export function Services({ config }) {
   return (
     <Section id="services">
       <SectionHead
-        eyebrow="Our Services"
         title="From a quick classic to full custom art"
         blurb="Tap a category to see the full menu."
       />
 
-      <div className="mt-14 flex flex-wrap justify-center gap-4">
+      <div className="reveal mt-10 flex flex-wrap justify-center gap-2" role="tablist" aria-label="Service categories">
         {services.map((s, i) => {
           const on = i === active
           return (
             <button
               key={s.name}
+              role="tab"
+              aria-selected={on}
               onClick={() => setActive(i)}
-              aria-pressed={on}
-              className={`card card-hover reveal group w-full p-6 text-left sm:w-[calc(50%-8px)] ${services.length === 5 ? 'lg:w-[calc(20%-13px)]' : 'lg:w-[calc(25%-12px)]'}`}
-              style={{
-                transitionDelay: `${i * 55}ms`,
-                borderColor: on ? 'var(--accent)' : 'var(--line)',
-                background: on ? 'var(--accent-soft)' : 'var(--surface)',
-              }}
+              className={`chip ${on ? 'chip-on' : ''}`}
             >
-              <div
-                className="flex h-10 w-10 items-center justify-center rounded-full"
-                style={{
-                  background: on ? 'var(--accent)' : 'var(--accent-soft)',
-                  color: on ? 'var(--on-accent)' : 'var(--accent)',
-                }}
-              >
-                <Icon name={s.icon} size={18} />
-              </div>
-              <h3 className="mt-4 text-[16px] font-semibold leading-snug">{s.name}</h3>
-              <span
-                className="mt-2 inline-flex items-center gap-1.5 text-[13px] font-medium"
-                style={{ color: 'var(--accent)' }}
-              >
-                {s.items.length} options
-                <ArrowRight size={13} className="transition-transform group-hover:translate-x-0.5" />
-              </span>
+              {s.name}
+              <span className="chip-count">{s.items.length}</span>
             </button>
           )
         })}
       </div>
 
-      <div className="card reveal mt-6 overflow-hidden p-7 sm:p-10">
+      <div className="card reveal mt-6 overflow-hidden p-7 sm:p-10" role="tabpanel">
         <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p className="eyebrow">Menu</p>
-            <h3 className="display mt-2 text-[26px] sm:text-[32px]">{current.name}</h3>
-          </div>
+          <h3 className="display text-[26px] sm:text-[32px]">{current.name}</h3>
           <a href={bookingUrl || '#booking'} className="btn btn-primary !py-3 !px-5 text-[13.5px]">
             {bookingUrl ? 'Book this' : 'Request a time'}
           </a>
@@ -96,7 +73,7 @@ export function Services({ config }) {
 
         {!showPrices && (
           <p className="mt-6 text-[13px]" style={{ color: 'var(--muted)' }}>
-            Pricing varies by length, shape, and design — call us for an exact quote.
+            Prices depend on length, shape, and design. Call for a quote.
           </p>
         )}
       </div>

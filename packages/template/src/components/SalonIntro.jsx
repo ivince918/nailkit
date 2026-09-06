@@ -35,14 +35,14 @@ export function SalonIntro({ config, phase, onSkip }) {
     return () => {
       document.body.style.overflow = previous
       window.removeEventListener('keydown', escape)
-      document.querySelector('header a')?.focus({ preventScroll: true })
+      document.getElementById('top')?.focus({ preventScroll: true })
     }
   }, [])
   return (
     <div className={`salon-intro ${phase === 'leaving' ? 'is-leaving' : ''}`} role="dialog" aria-modal="true" aria-label={`Welcome to ${config.name}`}>
       <div className="intro-shutter intro-shutter-left" /><div className="intro-shutter intro-shutter-right" />
       <div className="intro-grain" />
-      <span className="intro-corner">A LITTLE TIME, JUST FOR YOU</span>
+      <span className="intro-corner">{(config.address?.line1 || '').toUpperCase()}</span>
       <div className="intro-stage">
         <div className="intro-emblem" aria-hidden="true">
           <span className="intro-orbit" /><span className="intro-orbit orbit-two" />
@@ -50,11 +50,11 @@ export function SalonIntro({ config, phase, onSkip }) {
           <span className="intro-initial">{initialsFor(config.name)}</span><span className="intro-sparkle">✧</span>
         </div>
         <h2 className="intro-name">{config.name.split(' ').map((word,i)=><span key={i} style={{'--i':i}}>{word} </span>)}</h2>
-        <p className="intro-locality">{config.address?.city} <span>·</span> NAILS & SELF-CARE</p>
+        <p className="intro-locality">{config.address?.city} <span>·</span> NAIL STUDIO</p>
         <div className="intro-rule" aria-hidden="true"><span /></div>
       </div>
       <button ref={button} className="intro-skip" onClick={onSkip}>Enter the salon <span aria-hidden="true">↗</span></button>
-      <span className="intro-edition" aria-hidden="true">THE BEAUTY IS IN THE DETAILS.</span>
+      <span className="intro-edition" aria-hidden="true">{config.phoneDisplay}</span>
     </div>
   )
 }

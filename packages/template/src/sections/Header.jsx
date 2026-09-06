@@ -111,7 +111,7 @@ export function Nav({ config }) {
           <a href={`tel:${phone}`} className="btn btn-ghost hidden sm:inline-flex !py-2.5 !px-4">
             <Phone size={14} /> <span className="hidden xl:inline">{phoneDisplay}</span><span className="xl:hidden">Call</span>
           </a>
-          <a href={bookHref} className="btn btn-primary !py-2.5 !px-5">Book Now</a>
+          <a href={bookHref} className="btn btn-primary hidden sm:inline-flex !py-2.5 !px-5">{bookingUrl ? 'Book online' : 'Request a time'}</a>
           <button
             className="lg:hidden ml-1 p-2 -mr-2"
             onClick={() => setOpen((v) => !v)}

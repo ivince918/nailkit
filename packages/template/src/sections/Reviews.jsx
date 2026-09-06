@@ -1,5 +1,5 @@
 import React from 'react'
-import { Quote, ExternalLink } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 import { Section, SectionHead, Stars } from '../components/Primitives.jsx'
 
 /*
@@ -17,7 +17,6 @@ export function Reviews({ config }) {
   return (
     <Section id="reviews">
       <SectionHead
-        eyebrow="Testimonials"
         title="What our guests say"
         blurb={rating && showRating ? `Rated ${rating.toFixed(1)} out of 5 across ${reviewCount?.toLocaleString()} Google reviews.` : undefined}
       />
@@ -29,30 +28,15 @@ export function Reviews({ config }) {
             className="card card-hover reveal flex min-w-[85%] snap-center flex-col p-7 sm:min-w-[420px] md:min-w-0"
             style={{ transitionDelay: `${i * 80}ms` }}
           >
-            <Quote size={22} style={{ color: 'var(--accent)' }} className="opacity-40" />
-            <blockquote className="mt-4 flex-1 text-[15px] leading-[1.7]" style={{ color: 'var(--muted)' }}>
+            <blockquote className="flex-1 text-[15px] leading-[1.7]" style={{ color: 'var(--ink)' }}>
               {r.text}
             </blockquote>
-            <figcaption className="mt-6 flex items-center gap-3 border-t pt-5" style={{ borderColor: 'var(--line)' }}>
-              {r.avatar ? (
-                <img src={r.avatar} alt="" loading="lazy" className="h-9 w-9 rounded-full object-cover" />
-              ) : (
-                <span
-                  className="grid h-9 w-9 place-items-center rounded-full text-[13px] font-semibold"
-                  style={{ background: 'var(--accent-soft)', color: 'var(--accent)' }}
-                >
-                  {r.author?.[0]?.toUpperCase()}
-                </span>
-              )}
-              <div className="min-w-0">
-                <div className="truncate text-[14px] font-semibold">{r.author}</div>
-                <div className="mt-0.5 flex items-center gap-2">
-                  <Stars rating={r.rating} size={11} />
-                  {r.time ? (
-                    <span className="text-[11px]" style={{ color: 'var(--muted)' }}>{r.time}</span>
-                  ) : null}
-                </div>
-              </div>
+            <figcaption className="mt-6 flex items-center justify-between gap-3 border-t pt-4" style={{ borderColor: 'var(--line)' }}>
+              <span className="min-w-0">
+                <span className="block truncate text-[14px] font-semibold">{r.author}</span>
+                {r.time ? <span className="text-[11px]" style={{ color: 'var(--muted)' }}>{r.time}</span> : null}
+              </span>
+              <Stars rating={r.rating} size={11} className="shrink-0" />
             </figcaption>
           </figure>
         ))}
