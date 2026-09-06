@@ -117,6 +117,22 @@ Flags for `new`: `--from=<file>` · `--theme=<id>` · `--booking=<url>` · `--pl
 
 ---
 
+## Real pages for the gallery and the request form
+
+Sites are single-page by default. A salon with a big gallery can opt into `/gallery/` and
+`/book/` as real pages; the home page then shows six photos and a "See all" link, and every
+"Request a time" button goes to the booking page. Service links carry the choice across:
+`/book/?service=Gel%20Manicure` preselects it.
+
+1. `"pages": { "gallery": "/gallery/", "book": "/book/" }` in `salon.config.json`
+2. `gallery/index.html` and `book/index.html` (copy `index.html`, change the title, drop the canonical)
+3. `src/gallery.jsx` and `src/book.jsx` rendering `<SalonSite config={config} page="gallery" />`
+4. list all three in `vite.config.js` `build.rollupOptions.input`
+
+`sites/precious-nails-el-sobrante` is the working example. The single-file export
+(`npm run inline`) only bundles the home page, so its gallery and booking links need the
+hosted version.
+
 ## Temporary preview hosting (Cloudflare Workers)
 
 For a pitch you want a URL, not a file. Static assets on Workers is free, needs no domain,
@@ -196,8 +212,8 @@ Rules the pipeline follows:
   artifacts; a PNG source means WebP is the only lossy step.
 - **`srcSet` + `sizes="100vw"`** so phones fetch the 800px file, not the full hero, and
   `fetchPriority="high"` because the hero is the LCP element.
-- **The gallery needs at least 6 photos** (8 tiles the bento perfectly, 12 max). Below six the
-  section and its nav links drop out rather than rendering a grid with holes.
+- **The gallery needs at least 6 photos.** It is a masonry, so every photo keeps its own shape;
+  portrait phone shots balance best. Below six the section and its nav links drop out.
 - **Aim for ~1600px wide minimum.** At a 1440px viewport a 1672px source is a 1.13x
   downscale and looks sharp; the 459px image it replaced was a 3.1x upscale and looked it.
 

@@ -3,10 +3,12 @@ import { Phone, MapPin, Instagram, Facebook, Star } from 'lucide-react'
 import { Masthead } from '../components/Masthead.jsx'
 import { fmtTime, DAYS } from '../hooks/useOpenNow.js'
 import { navFor } from './Header.jsx'
+import { usePage } from '../page.jsx'
 
 export function Footer({ config }) {
   const { name, address, phone, phoneDisplay, hours = [], social = {}, mapsUrl, rating, reviewCount, showRating = true } = config
   const year = new Date().getFullYear()
+  const { page } = usePage()
   const ordered = [1, 2, 3, 4, 5, 6, 0].map((d) => hours.find((h) => h.day === d)).filter(Boolean)
 
   return (
@@ -67,7 +69,7 @@ export function Footer({ config }) {
           <div>
             <h3 className="text-[12px] font-semibold uppercase tracking-[0.16em]" style={{ color: 'var(--muted)' }}>Explore</h3>
             <nav className="mt-4 space-y-2.5 text-[14.5px]">
-              {navFor(config).filter((n) => n.href !== '#booking').map(({ label: l, href: h }) => (
+              {navFor(config, page).filter((n) => n.key !== 'book').map(({ label: l, href: h }) => (
                 <a key={h} href={h} className="block hover:underline" style={{ color: 'var(--muted)' }}>{l}</a>
               ))}
             </nav>

@@ -75,52 +75,6 @@
       "We are open six days a week and walk-ins are welcome. A quick call to (510) 758-9025 holds your chair."
     ]
   },
-  "trust": [
-    {
-      "value": "Open Mon to Sat",
-      "label": ""
-    },
-    {
-      "value": "Walk-ins",
-      "label": "welcome"
-    },
-    {
-      "value": "Licensed",
-      "label": "technicians"
-    }
-  ],
-  "why": [
-    {
-      "icon": "smile",
-      "title": "Greeted by name",
-      "body": "Reviewers keep using the word welcoming. The team knows its regulars, and first-timers get the same treatment."
-    },
-    {
-      "icon": "shield",
-      "title": "Clean, every time",
-      "body": "New liner in the foot bath, a fresh file, and tools sanitized between guests. One reviewer watched it happen."
-    },
-    {
-      "icon": "verified",
-      "title": "Careful work",
-      "body": "Even cuticles, clean lines, and shaping checked before you leave the chair."
-    },
-    {
-      "icon": "clock",
-      "title": "Sets that last",
-      "body": "Proper prep and quality product mean gel and dip hold for weeks."
-    },
-    {
-      "icon": "flower",
-      "title": "Nobody rushes you",
-      "body": "Massage chairs, a quiet room, and technicians who take their time."
-    },
-    {
-      "icon": "palette",
-      "title": "Custom art on request",
-      "body": "Bring a screenshot or describe it. The techs paint freehand."
-    }
-  ],
   "services": [
     {
       "name": "Manicures",
@@ -203,12 +157,12 @@
       "height": 1000
     },
     {
-      "alt": "Sheer pink ombré with silver glitter and crystal accents",
+      "alt": "Mauve almond set with hand-painted marble accent nails",
       "attribution": "Yelp",
       "src": "/photos/02.webp",
       "srcSm": "/photos/02@sm.webp",
-      "width": 1000,
-      "height": 750
+      "width": 758,
+      "height": 1000
     },
     {
       "alt": "Nude glitter set with gold foil and rhinestone accents",
@@ -219,27 +173,83 @@
       "height": 1000
     },
     {
-      "alt": "White French tips with crystal clusters",
+      "alt": "Blue and white marble coffin set",
+      "attribution": "Yelp",
+      "src": "/photos/08.webp",
+      "srcSm": "/photos/08@sm.webp",
+      "width": 769,
+      "height": 1000
+    },
+    {
+      "alt": "Red glitter ombré on a medium coffin set",
+      "attribution": "Yelp",
+      "src": "/photos/10.webp",
+      "srcSm": "/photos/10@sm.webp",
+      "width": 848,
+      "height": 1000
+    },
+    {
+      "alt": "Pink set with black and blush floral art",
+      "attribution": "Yelp",
+      "src": "/photos/12.webp",
+      "srcSm": "/photos/12@sm.webp",
+      "width": 750,
+      "height": 1000
+    },
+    {
+      "alt": "Sheer pink ombré with silver glitter and crystal accents",
       "attribution": "Yelp",
       "src": "/photos/04.webp",
       "srcSm": "/photos/04@sm.webp",
+      "width": 1000,
+      "height": 750
+    },
+    {
+      "alt": "Gold glitter stiletto set with hand-painted leopard print",
+      "attribution": "Yelp",
+      "src": "/photos/05.webp",
+      "srcSm": "/photos/05@sm.webp",
+      "width": 1000,
+      "height": 931
+    },
+    {
+      "alt": "White French tips with crystal clusters",
+      "attribution": "Yelp",
+      "src": "/photos/06.webp",
+      "srcSm": "/photos/06@sm.webp",
       "width": 1000,
       "height": 887
     },
     {
       "alt": "Burgundy stiletto set with gold studs and glitter fade",
       "attribution": "Yelp",
-      "src": "/photos/05.webp",
-      "srcSm": "/photos/05@sm.webp",
+      "src": "/photos/07.webp",
+      "srcSm": "/photos/07@sm.webp",
       "width": 750,
       "height": 1000
     },
     {
-      "alt": "Mauve almond set with hand-painted marble accent nails",
+      "alt": "Grey and gold marble set on a long square shape",
       "attribution": "Yelp",
-      "src": "/photos/06.webp",
-      "srcSm": "/photos/06@sm.webp",
-      "width": 758,
+      "src": "/photos/09.webp",
+      "srcSm": "/photos/09@sm.webp",
+      "width": 681,
+      "height": 1000
+    },
+    {
+      "alt": "Burgundy and white set with hand-painted floral accents",
+      "attribution": "Yelp",
+      "src": "/photos/11.webp",
+      "srcSm": "/photos/11@sm.webp",
+      "width": 798,
+      "height": 1000
+    },
+    {
+      "alt": "Red holiday set with hand-painted snowflakes and Santa accents",
+      "attribution": "Yelp",
+      "src": "/photos/13.webp",
+      "srcSm": "/photos/13@sm.webp",
+      "width": 798,
       "height": 1000
     }
   ],
@@ -281,5 +291,9 @@
     "height": 941,
     "smallWidth": 800,
     "concept": true
+  },
+  "pages": {
+    "gallery": "/gallery/",
+    "book": "/book/"
   }
 }

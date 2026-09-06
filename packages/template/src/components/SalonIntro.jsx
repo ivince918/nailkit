@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { initialsFor } from './Masthead.jsx'
 
-export function useSalonIntro(slug) {
+export function useSalonIntro(slug, enabled = true) {
   const key = `salon-intro-v2:${slug}`
   const [phase, setPhase] = useState(() => {
-    if (typeof window === 'undefined') return 'done'
+    if (typeof window === 'undefined' || !enabled) return 'done'
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || window.location.hash) return 'done'
     try { if (sessionStorage.getItem(key)) return 'done' } catch {}
     return 'opening'

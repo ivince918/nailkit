@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { MapPin, Phone, Navigation, Clock, ArrowRight } from 'lucide-react'
 import { Section, SectionHead } from '../components/Primitives.jsx'
 import { useOpenNow, fmtTime, DAYS } from '../hooks/useOpenNow.js'
+import { usePage } from '../page.jsx'
 
 /*
  * The embedded map is the one part of the page that needs the network. It fails
@@ -158,7 +159,8 @@ export function Visit({ config }) {
 
 /** Full-bleed closing CTA. */
 export function BookCTA({ config }) {
-  const { phone, phoneDisplay, bookingUrl, name, hours = [] } = config
+  const { phone, phoneDisplay, name, hours = [] } = config
+  const { links } = usePage()
   const openDays = hours.filter((h) => !h.closed).length
   const WORDS = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven']
   return (
@@ -170,15 +172,15 @@ export function BookCTA({ config }) {
           Walk-ins are welcome {WORDS[openDays] || openDays} days a week. Call ahead and {name} holds your chair.
         </p>
         <div className="reveal mt-9 flex flex-wrap justify-center gap-3" style={{ transitionDelay: '140ms' }}>
-          {bookingUrl && (
-            <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary !px-7 !py-4 text-[15px]">
-              Book online <ArrowRight size={16} />
-            </a>
-          )}
           <a
-            href={`tel:${phone}`}
-            className={`btn !px-7 !py-4 text-[15px] ${bookingUrl ? 'border border-white/25 text-white hover:bg-white/10' : 'btn-primary'}`}
+            href={links.book}
+            target={links.bookExternal ? '_blank' : undefined}
+            rel={links.bookExternal ? 'noopener noreferrer' : undefined}
+            className="btn btn-primary !px-7 !py-4 text-[15px]"
           >
+            {links.bookExternal ? 'Book online' : 'Request a time'} <ArrowRight size={16} />
+          </a>
+          <a href={`tel:${phone}`} className="btn !px-7 !py-4 text-[15px] border border-white/25 text-white hover:bg-white/10">
             <Phone size={15} /> {phoneDisplay}
           </a>
         </div>

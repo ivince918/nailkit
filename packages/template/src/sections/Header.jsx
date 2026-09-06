@@ -2,23 +2,25 @@ import React, { useState, useEffect } from 'react'
 import { Phone, MapPin, Menu, X, Instagram, Facebook, Star } from 'lucide-react'
 import { Masthead } from '../components/Masthead.jsx'
 import { hasGallery } from './Gallery.jsx'
+import { linksFor, usePage } from '../page.jsx'
 
 const NAV = [
-  { label: 'Services', href: '#services' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Reviews', href: '#reviews' },
-  { label: 'Book', href: '#booking' },
-  { label: 'Visit Us', href: '#visit' },
+  { label: 'Services', key: 'services' },
+  { label: 'Gallery', key: 'gallery' },
+  { label: 'Reviews', key: 'reviews' },
+  { label: 'Book', key: 'book' },
+  { label: 'Visit Us', key: 'visit' },
 ]
 
-/** Links only to sections that will actually render for this salon. */
-export function navFor(config) {
+/** Links only to sections that will actually render for this salon, resolved for the current page. */
+export function navFor(config, page = 'home') {
+  const links = linksFor(config, page)
   const present = {
-    '#gallery': hasGallery(config),
-    '#reviews': (config.reviews || []).length > 0,
-    '#booking': (config.hours || []).length > 0 && (config.services || []).length > 0,
+    gallery: hasGallery(config),
+    reviews: (config.reviews || []).length > 0,
+    book: (config.hours || []).length > 0 && (config.services || []).length > 0,
   }
-  return NAV.filter((n) => present[n.href] !== false)
+  return NAV.filter((n) => present[n.key] !== false).map((n) => ({ ...n, href: links[n.key] }))
 }
 
 /** Utility strip above the nav: socials on the left, Google rating + call on the right. */
@@ -65,7 +67,8 @@ export function Nav({ config }) {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const { name, phone, phoneDisplay, bookingUrl } = config
-  const links = navFor(config)
+  const { page, links: pageLinks } = usePage()
+  const links = navFor(config, page)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16)
@@ -79,7 +82,7 @@ export function Nav({ config }) {
     return () => { document.body.style.overflow = '' }
   }, [open])
 
-  const bookHref = bookingUrl || '#booking'
+  const bookHref = pageLinks.book
 
   return (
     <header

@@ -1,4 +1,5 @@
 import React from 'react'
+import { usePage } from '../page.jsx'
 
 /*
  * Generated wordmark. Salons at this size rarely have a usable logo file — and
@@ -96,6 +97,7 @@ export function Monogram({ config, size = 38, className = '' }) {
  */
 export function Masthead({ config, variant = 'nav', className = '' }) {
   const { name, address } = config
+  const { links } = usePage()
   const locality = [address?.city, address?.state].filter(Boolean).join(', ')
 
   if (variant === 'stacked') {
@@ -114,7 +116,7 @@ export function Masthead({ config, variant = 'nav', className = '' }) {
   }
 
   return (
-    <a href="#top" className={`flex min-w-0 items-center gap-2.5 ${className}`} aria-label={`${name} — home`}>
+    <a href={links.home} className={`flex min-w-0 items-center gap-2.5 ${className}`} aria-label={`${name} — home`}>
       <Monogram config={config} size={34} />
       <span className="display truncate text-[19px] leading-none sm:text-[22px]">{name}</span>
     </a>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { ArrowRight, Phone, Check } from 'lucide-react'
 import { Section, SectionHead } from '../components/Primitives.jsx'
+import { usePage } from '../page.jsx'
 
 /*
  * Category chips + a menu panel that swaps below them. The chips are the same
@@ -9,7 +10,8 @@ import { Section, SectionHead } from '../components/Primitives.jsx'
  * selected category renders into a fixed panel underneath instead.
  */
 export function Services({ config }) {
-  const { services = [], showPrices = false, phone, bookingUrl } = config
+  const { services = [], showPrices = false } = config
+  const { links } = usePage()
   const [active, setActive] = useState(0)
   if (!services.length) return null
 
@@ -43,8 +45,8 @@ export function Services({ config }) {
       <div className="card reveal mt-6 overflow-hidden p-7 sm:p-10" role="tabpanel">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <h3 className="display text-[26px] sm:text-[32px]">{current.name}</h3>
-          <a href={bookingUrl || '#booking'} className="btn btn-primary !py-3 !px-5 text-[13.5px]">
-            {bookingUrl ? 'Book this' : 'Request a time'}
+          <a href={links.book} className="btn btn-primary !py-3 !px-5 text-[13.5px]">
+            {links.bookExternal ? 'Book online' : 'Request a time'}
           </a>
         </div>
 
@@ -61,7 +63,7 @@ export function Services({ config }) {
                 style={{ borderColor: 'var(--line)', animationDelay: `${i * 35}ms`, animationDuration: '520ms' }}
               >
                 <Check size={14} className="shrink-0 translate-y-0.5" style={{ color: 'var(--accent)' }} />
-                <a className="service-book-link text-[15px]" href="#booking" onClick={() => window.dispatchEvent(new CustomEvent('salon:select-service', { detail: label }))}>{label}<ArrowRight size={13} aria-hidden="true" /></a>
+                <a className="service-book-link text-[15px]" href={links.bookService(label)} onClick={() => window.dispatchEvent(new CustomEvent('salon:select-service', { detail: label }))}>{label}<ArrowRight size={13} aria-hidden="true" /></a>
                 <span className="flex-1 border-b border-dotted opacity-30" style={{ borderColor: 'var(--muted)' }} />
                 <span className="text-[14px] font-semibold tabular-nums" style={{ color: showPrices && price ? 'var(--ink)' : 'var(--muted)' }}>
                   {showPrices && price ? price : 'Call'}

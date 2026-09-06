@@ -48,12 +48,12 @@ export function Section({ id, className = '', band = false, children, style }) {
   )
 }
 
-export function SectionHead({ title, blurb, center = true, className = '' }) {
+export function SectionHead({ title, blurb, center = true, className = '', as: Tag = 'h2' }) {
   return (
     <div className={`${center ? 'text-center mx-auto max-w-2xl' : 'max-w-2xl'} ${className}`}>
-      <h2 className="display reveal text-[clamp(30px,5vw,52px)]">
+      <Tag className="display reveal text-[clamp(30px,5vw,52px)]">
         {title}
-      </h2>
+      </Tag>
       {blurb && (
         <p className="reveal mt-5 text-[16px] leading-relaxed" style={{ color: 'var(--muted)', transitionDelay: '120ms' }}>
           {blurb}

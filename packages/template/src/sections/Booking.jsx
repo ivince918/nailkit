@@ -70,7 +70,7 @@ function buildSlots(day, utcOffsetMinutes) {
   return out
 }
 
-export function Booking({ config }) {
+export function Booking({ config, heading = 'h2' }) {
   const {
     hours = [], utcOffsetMinutes, services = [], name,
     phone, phoneDisplay, bookingUrl, slug,
@@ -101,6 +101,9 @@ export function Booking({ config }) {
       if (index >= 0) { setCategory(index); setService(e.detail) }
     }
     window.addEventListener('salon:select-service', select)
+    // Arriving from a service link on another page: /book/?service=Gel%20Manicure
+    const wanted = new URLSearchParams(window.location.search).get('service')
+    if (wanted) select({ detail: wanted })
     return () => window.removeEventListener('salon:select-service', select)
   }, [services])
   const allServices = useMemo(
@@ -178,6 +181,7 @@ export function Booking({ config }) {
   return (
     <Section id="booking" band>
       <SectionHead
+        as={heading}
         title="Request an appointment"
         blurb={`Pick a service and a time. ${name} confirms by text. Walk-ins are welcome too.`}
       />

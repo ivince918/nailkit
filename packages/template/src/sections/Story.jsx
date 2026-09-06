@@ -4,7 +4,8 @@ import { Section, SectionHead } from '../components/Primitives.jsx'
 /** "Welcome to {name}" — image left, copy right. */
 export function Story({ config }) {
   const { story = {}, photos = [], name } = config
-  const img = photos[1] || photos[0]
+  // A portrait shot fills the 4:5 frame without cropping; skip the gallery lead so the two sections differ.
+  const img = photos.find((p, i) => i > 0 && p.height > p.width) || photos[1] || photos[0]
 
   return (
     <Section id="about">
