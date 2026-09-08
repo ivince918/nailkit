@@ -35,6 +35,8 @@ export function useOpenNow(hours = [], utcOffsetMinutes = null) {
     const mins = local.getHours() * 60 + local.getMinutes()
     const today = hours.find((h) => h.day === todayIdx)
 
+    if (!today) return { open: null, label: 'Call to confirm today’s hours', todayIdx }
+
     if (today && !today.closed) {
       const open = toMinutes(today.open)
       let close = toMinutes(today.close)

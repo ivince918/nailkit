@@ -10,11 +10,12 @@ export function Story({ config }) {
   return (
     <Section id="about">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+        {!img && config.placeholderImages && <div className="blank-photo reveal" style={{aspectRatio:'4/5'}}><span>THE SALON</span><p>Image placeholder</p></div>}
         {img && (
           <div className="reveal reveal-img overflow-hidden" style={{ borderRadius: 'var(--radius)' }}>
             <img
               src={img.src}
-              srcSet={img.srcSm ? `${img.srcSm} 800w, ${img.src} 1600w` : undefined}
+              srcSet={img.srcSm ? `${img.srcSm} ${img.smallWidth || Math.min(img.width || 800,800)}w, ${img.src} ${img.width || 1600}w` : undefined}
               sizes="(max-width: 1024px) 100vw, 50vw"
               alt={img.alt || `Inside ${name}`}
               loading="lazy"

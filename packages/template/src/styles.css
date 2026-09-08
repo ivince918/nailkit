@@ -372,3 +372,14 @@ body {
 .masonry { columns:2; column-gap:12px; }
 .masonry-item { display:block; position:relative; overflow:hidden; width:100%; margin:0 0 12px; break-inside:avoid; -webkit-column-break-inside:avoid; background:var(--accent-soft); }
 @media (min-width:640px) { .masonry { columns:3; column-gap:16px; } .masonry-item { margin-bottom:16px; } }
+
+/* Reusable blank artwork slots preserve the final composition. */
+.blank-hero {position:absolute;inset:0;background:radial-gradient(ellipse at 80% 30%,#715142 0%,#3b2922 45%,#201613 100%);display:flex;align-items:center;justify-content:flex-end;padding:8%;color:#d9bf9c;font-size:10px;letter-spacing:.22em;}
+.blank-hero span{border:1px solid #ccb09055;width:32%;aspect-ratio:3/4;display:grid;place-items:center;border-radius:48% 48% 2px 2px;}
+.blank-photo {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;background:var(--band);border:1px solid var(--line);color:var(--muted);border-radius:var(--radius-sm);}
+.blank-photo span{font-family:var(--font-display);font-size:25px;opacity:.55}.blank-photo p{font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.preview-note{margin:24px auto 0;text-align:center;color:var(--muted);font-size:12px;max-width:600px}
+.photo-credits{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px;font-size:11px;color:var(--muted)}
+.hero-source{position:absolute;bottom:16px;right:24px;color:#f3e2cc;font-size:10px;z-index:2}
+
+.salon-site a[href="tel:"], .salon-site a[href="tel:undefined"], .salon-site a[href="tel:null"] {display:none!important}

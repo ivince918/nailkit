@@ -3,7 +3,7 @@
  * nailkit — Google Maps listing to a finished nail salon site.
  *
  *   npm run new -- "https://maps.app.goo.gl/xxxxx"
- *   npm run new -- "Heavenly Nail Spa, Palo Alto CA"
+ *   npm run new -- "Heavenly Nail Spa, Palo Alto CA" --api
  *   npm run new -- "<url>" --theme=sage-minimal --booking=https://...
  *   npm run new -- --manual
  */
@@ -22,7 +22,8 @@ loadEnv(ROOT)
 const argv = process.argv.slice(2)
 const flags = Object.fromEntries(
   argv.filter((a) => a.startsWith('--')).map((a) => {
-    const [k, v] = a.replace(/^--/, '').split('=')
+    const [k, ...parts] = a.replace(/^--/, '').split('=')
+    const v = parts.length ? parts.join('=') : undefined
     return [k, v === undefined ? true : v]
   })
 )
@@ -79,20 +80,22 @@ async function manualFlow() {
 }
 
 async function main() {
-  if (flags.help || (!input && !flags.manual && !flags.demo && !flags.from)) {
+  if (flags.help || (!input && !flags.manual && !flags.demo && !flags.from && !flags.blank)) {
     console.log(`
 ${c.b('nailkit')} — generate a nail salon site from a Google Maps listing
 
   ${c.b('npm run new --')} "https://maps.app.goo.gl/xxxx"
-  ${c.b('npm run new --')} "Heavenly Nail Spa, Palo Alto CA"
+  ${c.b('npm run new --')} "Heavenly Nail Spa, Palo Alto CA" --api
   ${c.b('npm run new --')} --manual
 
 Flags
+  --blank            create the animated template with empty image slots
+  --api              use Places API instead of the no-key browser importer
   --theme=<id>       force a theme (${THEME_IDS.join(', ')})
   --booking=<url>    online booking link, if the salon has one
   --place-id=<id>    skip the search step
-  --photos=<n>       how many photos to pull (default 10, max 10)
-  --force            overwrite an existing site folder
+  --photos=<n>       cap imported photos (browser max 12, API max 10)
+  --force            legacy/API only: overwrite an existing site folder
   --from=<file>      build from a hand-written listing file (no API key)
   --demo             build a demo salon with placeholder art, zero API calls
   --name= --city=    rename the demo salon (use with --demo)
@@ -103,6 +106,21 @@ Flags
   if (flags.theme && !THEME_IDS.includes(flags.theme)) {
     console.error(c.r(`Unknown theme "${flags.theme}". Options: ${THEME_IDS.join(', ')}`))
     process.exit(1)
+  }
+
+  // The default listing path shares the same safe, multipage builder as Studio.
+  if (flags.blank || (input && !flags.api && !flags.manual && !flags.demo && !flags.from)) {
+    const { createSalon } = await import('../builder/create.mjs')
+    const imported = flags.blank ? {
+      listing: { name: flags.name || 'Your Nail Studio', address: `Your Street, ${flags.city || 'Your City'}, ${flags.state || 'CA'}`, phone: '', hours: {} }, photos: [], warnings: [],
+    } : await (await import('../builder/maps.mjs')).importMaps(input, console.log)
+    if (flags.booking) imported.listing.bookingUrl = flags.booking
+    if (flags.photos !== undefined) imported.photos = imported.photos.slice(0, Math.max(0, Number(flags.photos) || 0))
+    for (const warning of imported.warnings || []) console.warn(warning)
+    const result = await createSalon({ ...imported, theme: flags.theme || 'terracotta-warm' }, console.log)
+    console.log(`\nReady: sites/${result.slug}\nRun: npm run dev -- ${result.slug}`)
+    for (const warning of result.warnings) console.warn(warning)
+    return
   }
 
   let details

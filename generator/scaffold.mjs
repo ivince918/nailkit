@@ -27,7 +27,7 @@ export async function savePhotos(dir, buffers, altBase) {
   const out = []
   for (let i = 0; i < buffers.length; i++) {
     const n = String(i + 1).padStart(2, '0')
-    const entry = { alt: `${altBase} — photo ${i + 1}`, attribution: buffers[i].attribution || null }
+    const entry = { alt: buffers[i].alt || `${altBase} — photo ${i + 1}`, attribution: buffers[i].attribution || null, sourceUrl: buffers[i].sourceUrl || null }
 
     if (sharp) {
       const img = sharp(buffers[i].data).rotate()
@@ -43,15 +43,16 @@ export async function savePhotos(dir, buffers, altBase) {
       const isHero = i === 0
       const wideW = Math.min(meta.width || 1600, isHero ? 2560 : 1600)
 
-      await img.clone().resize({ width: wideW, withoutEnlargement: true })
+      const wide = await img.clone().resize({ width: wideW, withoutEnlargement: true })
         .webp({ quality: isHero ? 90 : 82 }).toFile(path.join(dir, `${n}.webp`))
-      await img.clone().resize({ width: 800, withoutEnlargement: true })
+      const small = await img.clone().resize({ width: 800, withoutEnlargement: true })
         .webp({ quality: 78 }).toFile(path.join(dir, `${n}@sm.webp`))
 
       entry.src = `/photos/${n}.webp`
       entry.srcSm = `/photos/${n}@sm.webp`
-      entry.width = wideW
-      entry.height = meta.width ? Math.round((meta.height / meta.width) * wideW) : null
+      entry.smallWidth = small.width
+      entry.width = wide.width
+      entry.height = wide.height
     } else {
       await fs.writeFile(path.join(dir, `${n}.jpg`), buffers[i].data)
       entry.src = `/photos/${n}.jpg`
@@ -65,17 +66,18 @@ export async function savePhotos(dir, buffers, altBase) {
 function indexHtml(config) {
   const theme = THEMES[config.theme] || THEMES['pearl-clean']
   const vars = Object.entries(theme.vars).map(([k, v]) => `      ${k}: ${v};`).join('\n')
-  const jsonLd = JSON.stringify(buildJsonLd(config), null, 2)
+  const jsonLd = JSON.stringify(buildJsonLd(config), null, 2).replace(/</g, '\\u003c')
   const ogImage = config.photos?.[0]?.src || ''
 
   return `<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    ${config.preview ? '<meta name="robots" content="noindex,nofollow" />' : ''}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${escapeHtml(config.seo.title)}</title>
     <meta name="description" content="${escapeHtml(config.seo.description)}" />
-    <link rel="canonical" href="/" />
+
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="${escapeHtml(config.seo.title)}" />
@@ -152,7 +154,7 @@ export default defineConfig({
   // The shared template is a workspace symlink — keep it as source so Vite
   // transforms its JSX instead of trying to pre-bundle it.
   optimizeDeps: { exclude: ['@nailkit/template'] },
-  build: { target: 'es2020' },
+  build: { target: 'es2020', rollupOptions: { input: ${JSON.stringify(Object.fromEntries([['main','index.html'], ...(config.pages?.gallery ? [['gallery','gallery/index.html']] : []), ...(config.pages?.book ? [['book','book/index.html']] : [])]))} } },
 })
 `)
 
@@ -184,6 +186,18 @@ createRoot(document.getElementById('root')).render(
   </React.StrictMode>
 )
 `)
+
+  for (const page of ['gallery', 'book']) {
+    if (!config.pages?.[page]) continue
+    await w(path.join(dir, page, 'index.html'), indexHtml(config).replace('/src/main.jsx', `/src/${page}.jsx`).replace('href="/"', `href="/${page}/"`))
+    await w(path.join(dir, 'src', `${page}.jsx`), `import React from 'react'
+import { createRoot } from 'react-dom/client'
+import SalonSite from '@nailkit/template'
+import '@nailkit/template/styles.css'
+import config from '../salon.config.json'
+createRoot(document.getElementById('root')).render(<SalonSite config={config} page="${page}" />)
+`)
+  }
 
   await w(path.join(dir, '.gitignore'), 'node_modules\ndist\n.vercel\n')
 

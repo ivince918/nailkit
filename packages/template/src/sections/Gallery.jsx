@@ -17,7 +17,7 @@ import { usePage } from '../page.jsx'
  * sends enough of its own work.
  */
 export const GALLERY_MIN = 6
-export const hasGallery = (config) => (config.photos || []).length >= GALLERY_MIN
+export const hasGallery = (config) => config.placeholderImages || (config.photos || []).length >= GALLERY_MIN
 
 const TEASER = 6
 
@@ -30,6 +30,7 @@ export function Gallery({ config, full = false }) {
 
   const shown = full ? photos.slice(0, 48) : photos.slice(0, TEASER)
   const rest = photos.length - shown.length
+  const blanks = config.placeholderImages ? Math.max(0, 6 - shown.length) : 0
 
   return (
     <Section id="gallery" band>
@@ -46,7 +47,7 @@ export function Gallery({ config, full = false }) {
           >
             <img
               src={p.src}
-              srcSet={p.srcSm ? `${p.srcSm} 800w, ${p.src} 1600w` : undefined}
+              srcSet={p.srcSm ? `${p.srcSm} ${p.smallWidth || Math.min(p.width || 800, 800)}w, ${p.src} ${p.width || 1600}w` : undefined}
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 380px"
               width={p.width}
               height={p.height}
@@ -61,7 +62,9 @@ export function Gallery({ config, full = false }) {
             </span>
           </button>
         ))}
+        {Array.from({length:blanks},(_,i)=><div key={`blank-${i}`} className="masonry-item blank-photo reveal" style={{aspectRatio:i%2?'4/5':'3/4'}}><span>0{shown.length+i+1}</span><p>Image placeholder</p></div>)}
       </div>
+      {shown.some(p=>p.sourceUrl) && <div className="photo-credits">{shown.filter(p=>p.sourceUrl).map((p,i)=><a key={p.src} href={p.sourceUrl} target="_blank" rel="noopener noreferrer">Photo {i+1}: {p.attribution || 'Google Maps'}</a>)}</div>}
 
       {rest > 0 && (
         <div className="reveal mt-10 text-center">

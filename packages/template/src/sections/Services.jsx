@@ -23,6 +23,7 @@ export function Services({ config }) {
         title="From a quick classic to full custom art"
         blurb="Tap a category to see the full menu."
       />
+      {config.menuNote && <p className="preview-note">{config.menuNote}</p>}
 
       <div className="reveal mt-10 flex flex-wrap justify-center gap-2" role="tablist" aria-label="Service categories">
         {services.map((s, i) => {

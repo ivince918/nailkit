@@ -113,6 +113,7 @@ export function Visit({ config }) {
               <span className="text-[13px] font-semibold uppercase tracking-wider" style={{ color: 'var(--muted)' }}>Hours</span>
             </div>
 
+            {hours.length < 7 && <p className="mt-3 text-sm">Call to confirm hours for days not listed.</p>}
             <dl className="mt-3">
               {ordered.map((h) => {
                 const today = h.day === status.todayIdx
@@ -169,7 +170,7 @@ export function BookCTA({ config }) {
       <div className="relative mx-auto max-w-2xl" style={{ color: 'var(--invert-fg)' }}>
         <h2 className="display reveal text-[clamp(30px,5.4vw,54px)]">Book your next visit</h2>
         <p className="reveal mt-5 text-[16px] leading-relaxed opacity-70" style={{ transitionDelay: '70ms' }}>
-          Walk-ins are welcome {WORDS[openDays] || openDays} days a week. Call ahead and {name} holds your chair.
+          Get in touch with {name} to discuss your treatment and find a time that suits you.
         </p>
         <div className="reveal mt-9 flex flex-wrap justify-center gap-3" style={{ transitionDelay: '140ms' }}>
           <a

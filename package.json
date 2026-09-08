@@ -14,9 +14,13 @@
     "dev": "node generator/run.mjs dev",
     "build": "node generator/run.mjs build",
     "list": "node generator/list.mjs",
-    "inline": "node generator/inline.mjs"
+    "inline": "node generator/inline.mjs",
+    "studio": "node builder/server.mjs",
+    "test:builder": "node --test builder/*.test.mjs",
+    "generate": "node builder/generate.mjs"
   },
   "devDependencies": {
+    "puppeteer": "^25.10.0",
     "sharp": "^0.33.4"
   }
 }

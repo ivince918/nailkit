@@ -1,0 +1,85 @@
+{
+  "slug": "your-nail-studio-your-city",
+  "placeId": "maps-your-nail-studio-your-street-your-city-ca",
+  "generatedAt": "2026-09-08T02:53:50.572Z",
+  "name": "Your Nail Studio",
+  "theme": "terracotta-warm",
+  "phone": "",
+  "phoneDisplay": "",
+  "address": {
+    "line1": "Your Street",
+    "city": "Your City",
+    "state": "CA",
+    "zip": "",
+    "full": "Your Street, Your City, CA"
+  },
+  "geo": null,
+  "mapsUrl": "https://www.google.com/maps/search/Your%20Nail%20Studio%20Your%20Street%2C%20Your%20City%2C%20CA",
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination_place_id=maps-your-nail-studio-your-street-your-city-ca&destination=Your%20Street%2C%20Your%20City%2C%20CA",
+  "websiteUrl": null,
+  "bookingUrl": null,
+  "utcOffsetMinutes": null,
+  "hours": [],
+  "rating": null,
+  "reviewCount": null,
+  "showRating": false,
+  "mapEmbed": null,
+  "priceRange": "$$",
+  "hero": {
+    "sub": "A fresh set. A slower moment. A little time for you."
+  },
+  "story": {
+    "title": "Welcome to Your Nail Studio",
+    "body": [
+      "Your Nail Studio is a nail salon in Your City.",
+      "Explore the gallery, choose a treatment, and get in touch to plan your next visit."
+    ]
+  },
+  "trust": [],
+  "why": [],
+  "services": [
+    {
+      "name": "Manicures",
+      "icon": "hand",
+      "items": [
+        "Manicure consultation"
+      ]
+    },
+    {
+      "name": "Pedicures",
+      "icon": "footprints",
+      "items": [
+        "Pedicure consultation"
+      ]
+    },
+    {
+      "name": "Nail design",
+      "icon": "palette",
+      "items": [
+        "Nail design consultation"
+      ]
+    }
+  ],
+  "showPrices": false,
+  "amenities": [],
+  "social": {
+    "instagram": null,
+    "facebook": null
+  },
+  "photos": [],
+  "photoSource": "blank",
+  "reviews": [],
+  "seo": {
+    "title": "Your Nail Studio | Nail Salon in Your City",
+    "description": "Visit Your Nail Studio in Your City. Explore the gallery and get in touch to plan your visit."
+  },
+  "pages": {
+    "gallery": "/gallery/",
+    "book": "/book/"
+  },
+  "placeholderImages": true,
+  "preview": true,
+  "bookingDelivery": "preview",
+  "heroImage": null,
+  "menuNote": "Sample menu · confirm treatments with the salon."
+}

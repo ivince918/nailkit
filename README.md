@@ -1,5 +1,36 @@
 # NailKit
 
+## NailKit Studio — reusable salon builder
+
+The latest Precious Nails design is now a reusable, three-page template. It keeps the polish-monogram opening, curtain reveal, animated hero, scroll reveals, masonry gallery/lightbox, mobile navigation, and service-to-booking links. The blank example lives at `sites/your-nail-studio-your-city/` and contains no photos or copied client details.
+
+```bash
+npm ci
+npm run studio
+```
+
+Open **http://127.0.0.1:8892**. Paste a Google Maps place/Share link, import, review the details and images, and click **Generate salon website**. You can select the hero, exclude photos, upload originals, choose a theme, edit the service menu, enter hours, and paste Google’s map embed code. **Start with blank images** creates the same layout without photography.
+
+Each run creates a separate `sites/<salon>-<city>/` folder (adding a numeric suffix if it already exists), builds home, `/gallery/`, and `/book/`, and opens an independent local preview. Keep Studio running while viewing previews. Source images are preserved under `source-images/`; responsive WebP files go into `public/photos/`. `salon.config.json` remains the single place to edit the site. `import-report.json` records the listing source and image download warnings.
+
+**No API key is needed.** The importer reads the public Google Maps page in a bundled browser. Google sometimes returns a limited view or a verification screen; the tool reports this and leaves unavailable fields blank. It does not bypass verification, invent hours/reviews/prices, or assume a photo is nail work. On our Precious Nails smoke test Google exposed contact details and one photo, but not a full weekly schedule. Review the selected photo and missing details; manual fields and uploads are always available.
+
+Generated sites are marked `noindex` and use preview booking: no request is transmitted. Missing hours disable the corresponding calendar days; a missing timezone offset uses the visitor’s clock for the draft. Confirm hours, timezone, menu, image permissions, and booking delivery before enabling a client site. The existing Precious Nails configuration and its booking behavior remain separate.
+
+For an agent-assisted workflow, pass a reviewed listing JSON instead of using the interface:
+
+```bash
+npm run generate -- inputs/salon.json
+npm run new -- --blank --name="Your Nail Studio" --city="Your City"
+npm run new -- "https://www.google.com/maps/place/..."
+npm run test:builder
+```
+
+`generate` accepts either a plain listing or `{ listing, photos, theme }`. Photos accept `{ url, sourceUrl, attribution, alt, hero }` for Google-hosted listing photos, or a JPG/PNG/WebP `data` URI for uploaded originals. Supply confirmed services as `[{ name, icon, items: ["Treatment"] }]` and hours as `{ mon: "09:30-18:00", sun: "closed" }`; omitted days remain unknown. Do not use `--force` for Studio: new sites intentionally never overwrite existing client work.
+
+The older Places API flow is still available with `npm run new -- "<link>" --api`. Browser import uses [Puppeteer](https://pptr.dev/guides/getting-started); API users should follow [Google’s Places attribution policies](https://developers.google.com/maps/documentation/places/web-service/policies).
+
+
 ## Preview the Precious Nails website
 
 ```bash
@@ -35,7 +66,7 @@ cd nailkit && npm install
 
 That's it. **No API key is required.**
 
-### The default workflow: `--from` a listing file
+### Legacy workflow: `--from` a listing file
 
 Open the salon's Google Maps listing, read it, and drop the facts into
 `inputs/<slug>.json`. See [`inputs/heavenly-nail-spa.json`](inputs/heavenly-nail-spa.json)
@@ -68,7 +99,7 @@ uses them to decide which service categories the salon actually offers.
 
 If you'd rather have it fetch automatically, add a key to `.env`
 (`cp .env.example .env`; enable **Places API (New)** in Google Cloud) and pass a Maps
-URL directly. It's the same pipeline — `--from` just skips the key.
+URL with `--api`. It's the same pipeline — `--from` just skips the key.
 
 Also available with no key: `--demo` (fictional salon, placeholder art) and
 `--manual` (interactive prompts).

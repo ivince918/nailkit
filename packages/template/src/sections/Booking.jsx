@@ -111,7 +111,7 @@ export function Booking({ config, heading = 'h2' }) {
     [services]
   )
 
-  if (!hours.length || !allServices.length) return null
+  if ((!hours.length && !config.preview) || !allServices.length) return null
 
   const ready = service && time && form.name.trim() && form.phone.replace(/\D/g, '').length >= 10
 
@@ -128,6 +128,7 @@ export function Booking({ config, heading = 'h2' }) {
   async function submit(e) {
     e.preventDefault()
     if (!ready || state === 'sending') return
+    if (config.bookingDelivery === 'preview') { setState('offline'); return }
     setState('sending')
     try {
       const res = await fetch('/api/book', {
@@ -183,9 +184,10 @@ export function Booking({ config, heading = 'h2' }) {
       <SectionHead
         as={heading}
         title="Request an appointment"
-        blurb={`Pick a service and a time. ${name} confirms by text. Walk-ins are welcome too.`}
+        blurb={config.preview ? 'Choose a treatment and explore the appointment request form.' : `Pick a service and a time. Contact ${name} to confirm your appointment.`}
       />
 
+      {config.preview && <p className="preview-note">Preview calendar · no appointment is sent or reserved. Confirm the salon’s hours before launch.</p>}
       <form onSubmit={submit} className="booking-form reveal mx-auto mt-12">
         <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
           {/* 1 — service */}
@@ -277,11 +279,11 @@ export function Booking({ config, heading = 'h2' }) {
               </div>
             ) : (
               <p className="text-[14px]" style={{ color: 'var(--muted)' }}>
-                No times left today — pick another day, or call {phoneDisplay} to ask about tonight.
+                {!hours.length ? 'Hours haven’t been added yet. Contact the salon to arrange a time.' : 'No request times for this day. Choose another day or contact the salon.'}
               </p>
             )}
             <p className="mt-4 text-[12.5px]" style={{ color: 'var(--muted)' }}>
-              These are opening hours, not confirmed openings. {name} will text you back to confirm.
+              These are opening hours, not confirmed openings. Contact {name} to confirm your appointment.
             </p>
           </fieldset>
 
